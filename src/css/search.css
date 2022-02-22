@@ -1,0 +1,31 @@
+ {
+  padding: 0;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
+
+.number-result {
+  width: 20%;
+  height: 30px;
+  background-color: #c88d23;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.number-result h3 {
+  color: white;
+  font-family: "Marko One", serif;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: #17202a;
+  display: flex;
+  flex-direction: column;
+}
+
+.result {
+  width: 100%;
+}
