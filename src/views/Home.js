@@ -1,4 +1,12 @@
+import Navbar from "./../component/Navbar"
+
 
 function Home(){
-    return();
+    return(
+        <div className="Home">
+            <Navbar />
+        </div>
+    );
 }
+
+export default Home;
