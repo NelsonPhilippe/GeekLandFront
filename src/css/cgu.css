@@ -1,0 +1,16 @@
+.cgu{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1D252F;
+    color:#E5E5E5;
+    Text-align: center;
+}
+p{
+    font-family: roboto,sans-serif;
+    font-size: 14px;
+}
+h1, h2{
+    font-family: Marko One;
+}

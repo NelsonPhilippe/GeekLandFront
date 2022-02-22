@@ -2,15 +2,15 @@
 // import './App.css';
 import * as React from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import Home from './views/Home'
+import CGU from './component/Cgu'
 
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<CGU />} />
       </Routes>
     </div>
   );
