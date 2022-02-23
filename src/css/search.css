@@ -72,3 +72,10 @@
   height: 100%;
   transform: translateY(25%);
 }
+
+.sep {
+  width: 90%;
+  height: 2px;
+  background-color: #2e86c1;
+  margin-top: 100px;
+}

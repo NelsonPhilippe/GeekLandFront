@@ -25,6 +25,7 @@ function Search() {
               <h1>250 €</h1>
           </div>
         </div>
+          <div className="sep"></div>
       </div>
     </div>
   );
