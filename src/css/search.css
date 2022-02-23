@@ -7,7 +7,7 @@ body {
 
 .number-result {
   width: 20%;
-  height: 30px;
+  height: 40px;
   background-color: #c88d23;
   border-radius: 10px 10px 0px 0px;
   margin-top: 150px;
@@ -15,7 +15,7 @@ body {
 }
 
 .number-result h3 {
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   font-family: "Marko One", serif;
   font-weight: normal;
   color: white;
@@ -51,19 +51,19 @@ body {
 }
 
 .text h1 {
-  font-size: 3vw;
+  font-size: 2.3vw;
   font-family: "Marko One", serif;
   font-weight: normal;
   color: white;
   margin-left: 5%;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .text p {
   width: 70%;
   height: auto;
   font-family: roboto, arial, helvetica;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   font-weight: normal;
   color: white;
   margin-left: 10%;
@@ -77,7 +77,7 @@ body {
   display: flex;
 }
 .price h1 {
-  font-size: 2.7vw;
+  font-size: 2.5vw;
   color: white;
   margin: auto;
   text-align: center;
@@ -90,4 +90,27 @@ body {
   background-color: #2e86c1;
   margin: 0 auto;
   margin-top: 100px;
+}
+
+@media screen and (max-width: 700px) {
+  .number-result {
+    width: 30%;
+    height: 30px;
+  }
+  .number-result h3 {
+    font-size: 1.8vw;
+  }
+  .text h1 {
+    font-size: 3vw;
+    margin-top: 5px;
+  }
+  .text p {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    padding-top: 50px;
+  }
 }
