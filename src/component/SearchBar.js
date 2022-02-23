@@ -1,12 +1,18 @@
-import '../css/component/search.css';
+import './../css/components/SearchBar.css';
+import * as React from "react";
 
 
-function search(){
+function search() {
     return (
         <div className='search'>
+
+
             <img src="/img/loupe_icon.png" alt="loupe" />
             <div id="separator"></div>
-            <h6>Search</h6>
+            <form>
+
+                <input type="text" name="search" placeholder="Search" />
+            </form>
         </div>
     );
 }
