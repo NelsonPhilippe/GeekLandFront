@@ -6,7 +6,6 @@ function Search() {
       <div className="number-result">
         <h3>150 résultat de recherche :</h3>
       </div>
-
       <div className="container">
         <div className="result">
           <img
@@ -14,7 +13,6 @@ function Search() {
             alt="Tanjiro Hinokami"
             title="Tanjiro Hinokami"
           />
-
           <div className="text">
             <h1>Titre de l'objet</h1>
             <p>
@@ -33,7 +31,6 @@ function Search() {
             alt="Tanjiro Hinokami"
             title="Tanjiro Hinokami"
             />
-
           <div className="text">
             <h1>Titre de l'objet</h1>
             <p>
@@ -41,7 +38,7 @@ function Search() {
             </p>
             </div>
             <div className="price">
-              <h1>250 €</h1>
+              <h1>50 €</h1>
           </div>
         </div>
           <div className="sep"></div>

@@ -33,6 +33,7 @@
   margin: 0 auto;
   padding-top: 100px;
 }
+
 .result img {
   width: 20%;
   height: auto;
@@ -65,17 +66,18 @@
   height: auto;
   background-color: #2e86c1;
   border-radius: 0px 10px 10px 0px;
-  text-align: center;
+  display: flex;
 }
 .price h1 {
   color: white;
-  height: 100%;
-  transform: translateY(25%);
+  margin: auto;
+  text-align: center;
 }
 
 .sep {
   width: 90%;
   height: 2px;
   background-color: #2e86c1;
+  margin: 0 auto;
   margin-top: 100px;
 }
