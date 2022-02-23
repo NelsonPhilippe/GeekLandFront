@@ -5,7 +5,7 @@ function cgu(){
         <div>
             <div className="cgu">
                 <h1>Conditions Générales d'utilisation</h1>
-                <h4>En viguer au 22/02/2022</h4>
+                <h4>En vigueur au 22/02/2022</h4>
                 <article>
                     <p><h2>Article 1 : Objet</h2><br/>
                     Les présentes CGU ou Conditions Générales d’Utilisation 

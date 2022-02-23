@@ -1,11 +1,26 @@
+html{
+    padding: 0;
+    margin: 0;
+    background-color: #E5E5E5;
+}
+div{
+    padding: 0;
+    margin: 0;
+    background:opacity(50);
+    background-color: #E5E5E5;
+
+}
 .cgu{
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 60%;
+    width: 60%; 
     background-color: #1D252F;
     color:#E5E5E5;
     Text-align: center;
+    opacity: 90%;
 }
 p{
     font-family: roboto,sans-serif;
