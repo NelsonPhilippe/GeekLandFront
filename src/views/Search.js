@@ -4,7 +4,7 @@ function Search() {
   return (
     <div>
       <div className="number-result">
-        <h3>150 résultat de recherche :</h3>
+        <h3>150 résultats de recherche :</h3>
       </div>
       <div className="container">
         <div className="result">
