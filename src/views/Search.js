@@ -24,26 +24,8 @@ function Search() {
           </div>
         </div>
           <div className="sep"></div>
-
-        <div className="result">
-          <img
-            src="/img/Tanjiro Hinokami.jpg"
-            alt="Tanjiro Hinokami"
-            title="Tanjiro Hinokami"
-            />
-          <div className="text">
-            <h1>Titre de l'objet</h1>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus ut rhoncus, porttitor at id odio id
-            </p>
-            </div>
-            <div className="price">
-              <h1>50 €</h1>
-          </div>
-        </div>
-          <div className="sep"></div>
-      </div>
     </div>
+  </div>    
     
   );
 }
