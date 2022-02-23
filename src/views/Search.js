@@ -1,4 +1,6 @@
-import "../css/search.css";
+import * as React from "react";
+
+import "./../css/Search.css";
 
 function Search() {
   return (
@@ -16,17 +18,17 @@ function Search() {
           <div className="text">
             <h1>Titre de l'objet</h1>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus ut rhoncus, porttitor at id odio id
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus ut rhoncus, porttitor at id odio id
             </p>
-            </div>
-            <div className="price">
-              <h1>250 €</h1>
+          </div>
+          <div className="price">
+            <h1>250 €</h1>
           </div>
         </div>
-          <div className="sep"></div>
+        <div className="sep"></div>
+      </div>
     </div>
-  </div>    
-    
+
   );
 }
 
