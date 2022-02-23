@@ -1,0 +1,46 @@
+.search{
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 60%;
+    background-color: white;
+    align-items: center;
+    border-radius: 15px;
+
+}
+
+
+.search input{
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 15px;
+}
+
+.search input:focus{
+    outline: none;
+    padding-left: 1em;
+}
+
+.search div{
+    position: absolute;
+    background-color: #17202A;
+    height: 70%;
+    width: 1px;
+    z-index: 2;
+    left: 4%;
+}
+
+
+.search img{
+    width: 2%;
+    height: auto;
+    z-index: 2;
+    margin-left: 1%;
+}
