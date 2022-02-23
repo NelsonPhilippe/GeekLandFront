@@ -1,0 +1,116 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
+
+.number-result {
+  width: 20%;
+  height: 40px;
+  background-color: #c88d23;
+  border-radius: 10px 10px 0px 0px;
+  margin-top: 150px;
+  display: flex;
+}
+
+.number-result h3 {
+  font-size: 1.3vw;
+  font-family: "Marko One", serif;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: #17202a;
+  padding-top: 100px;
+}
+
+.result {
+  width: 90%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.result img {
+  width: 20%;
+  height: auto;
+}
+
+.text {
+  width: 70%;
+  height: auto;
+  background-color: #c88d23;
+}
+
+.text h1 {
+  font-size: 2.3vw;
+  font-family: "Marko One", serif;
+  font-weight: normal;
+  color: white;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+
+.text p {
+  width: 70%;
+  height: auto;
+  font-family: roboto, arial, helvetica;
+  font-size: 1.2vw;
+  font-weight: normal;
+  color: white;
+  margin-left: 10%;
+}
+
+.price {
+  width: 15%;
+  height: auto;
+  background-color: #2e86c1;
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+}
+.price h1 {
+  font-size: 2.5vw;
+  color: white;
+  margin: auto;
+  text-align: center;
+  font-weight: normal;
+}
+
+.sep {
+  width: 90%;
+  height: 2px;
+  background-color: #2e86c1;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 700px) {
+  .number-result {
+    width: 30%;
+    height: 30px;
+  }
+  .number-result h3 {
+    font-size: 1.8vw;
+  }
+  .text h1 {
+    font-size: 3vw;
+    margin-top: 5px;
+  }
+  .text p {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    padding-top: 50px;
+  }
+}
