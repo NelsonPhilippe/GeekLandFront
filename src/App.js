@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
-// import './App.css';
+import './css/App.css';
 import * as React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from './views/Home'
 
 

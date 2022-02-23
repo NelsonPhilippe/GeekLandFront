@@ -1,4 +1,6 @@
-import Navbar from "./../component/Navbar"
+import Navbar from "../components/Navbar"
+// import './css/Search.css'
+import * as React from "react";
 
 
 function Home(){
