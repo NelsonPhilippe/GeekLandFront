@@ -1,15 +1,18 @@
 // import './css/Search.css'
 import * as React from "react";
 import Navbar from "../components/Navbar"
-import Search from "./Search";
+import CarouselHome  from "../components/CarouselHome";
 
-function Home(){
-    return(
-        <div className="Home">
-            <Navbar />
-            <Search />
-        </div>
-    );
+class Home extends React.Component{
+    render(){
+        return(
+            <div className="Home">
+                <Navbar />
+                <CarouselHome />
+                {/* <Search /> */}
+            </div>
+        );
+    }
 }
 
 export default Home;

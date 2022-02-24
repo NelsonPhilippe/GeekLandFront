@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 import SearchBar from './SearchBar'
 import Profile from './ProfileMenu'
 
-function Navbar() {
+class Navbar extends React.Component {
 
 
-    function hoverProfile() {
+    hoverProfile() {
         let profile = document.getElementById('menu-profile');
 
 
-        if(profile.style.visibility == "visible"){
+        if(profile.style.visibility === "visible"){
             profile.style.visibility = "hidden";
             return;
         }
@@ -21,18 +21,20 @@ function Navbar() {
 
     }
 
-    return (
-        <div className='Nav'>
-            <Link id='logo' to='/'><img src="/img/logo.png" alt="logo" /></Link>
-            <SearchBar />
-            <img id="menu" src='/img/Menu.png' alt='menu_btn' />
-            <img id="profile" src='/img/profile.png' alt='profile_btn'
-            onClick={() => hoverProfile()}
-
-            />
-            <Profile />
-        </div>
-    );
+    render(){
+        return (
+            <div className='Nav'>
+                <Link id='logo' to='/'><img src="/img/logo.png" alt="logo" /></Link>
+                <SearchBar />
+                <img id="menu" src='/img/Menu.png' alt='menu_btn' />
+                <img id="profile" src='/img/profile.png' alt='profile_btn'
+                onClick={() => this.hoverProfile()}
+    
+                />
+                <Profile />
+            </div>
+        );
+    }
 }
 
 export default Navbar;
