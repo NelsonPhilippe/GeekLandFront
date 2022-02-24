@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
 // import './App.css';
 import * as React from "react";
-import { Routes, Route, Link } from "react-router-dom";
-import CGU from './component/Cgu'
+import { Routes, Route,  } from "react-router-dom";
+import Fieldlogin from './component/Fieldlogin'
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       
       <Routes>
-        <Route path="/" element={<CGU />} />
+        <Route path="/" element={<Fieldlogin />} />
       </Routes>
     </div>
   );

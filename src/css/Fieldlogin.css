@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("../../public/img/LogoGeekLand.png");
+    background-size: cover;
+
+
+}
+.App{
+    height: 100vh;
+}
+.connexion{
+    margin: auto;
+}
+form{
+    padding: 0;
+    margin: 0;
+    width: 500px;
+    height: 550px;
+    background-color: rgb(205, 255, 250,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    border-radius: 20%;
+    font-size: 18px;
+    
+}
+
+a{
+    color: black;
+}
+#ok{
+    background-color:#e39D22;
+    border: 1px solid #e39D22;
+    border-radius: 15%;
+}
