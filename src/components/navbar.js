@@ -7,13 +7,15 @@ import Profile from './ProfileMenu'
 function Navbar() {
 
 
-    function hoverProfile(status) {
+    function hoverProfile() {
         let profile = document.getElementById('menu-profile');
 
-        if (status) {
-            profile.style.visibility = 'hidden';
+
+        if(profile.style.visibility == "visible"){
+            profile.style.visibility = "hidden";
             return;
         }
+
 
         profile.style.visibility = 'visible';
 
@@ -25,8 +27,8 @@ function Navbar() {
             <SearchBar />
             <img id="menu" src='/img/Menu.png' alt='menu_btn' />
             <img id="profile" src='/img/profile.png' alt='profile_btn'
-            onMouseEnter={() => hoverProfile(false)}
-            onMouseLeave={() => hoverProfile(true)}
+            onClick={() => hoverProfile()}
+
             />
             <Profile />
         </div>
