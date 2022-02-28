@@ -1,71 +1,37 @@
-.carousel-home{
-    position: relative;
-    display: flex;
-    flex-direction: row;
+.aws-btn {
+
+    --slider-height-percentage: 60%;
+    --slider-transition-duration: 700ms;
+    --organic-arrow-thickness: 4px;
+    --organic-arrow-border-radius: 0px;
+    --organic-arrow-height: 40px;
+    --organic-arrow-color: #e39d23;
+    --control-button-width: 10%;
+    --control-button-height: 25%;
+    --control-button-background: transparent;
+    --control-bullet-color: #E39D22;
+    --control-bullet-active-color: rgb(227, 157, 34, 0.6);
+    --loader-bar-color: #851515;
+    --loader-bar-height: 6px;
+}
+
+
+.awssld{
     width: 100vw;
     height: 40vh;
 }
 
-.block-0{
-    position: absolute;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-    transition: left 1s;
-    z-index: 1;
-    visibility: visible;
+.awssld__content img{
+    position: relative;
+    max-width: 100%;
+    height: 100% !important;
+    object-fit: fill;
 }
 
-.block-0 img{
-    width: 100%;
-    height: 100%;
+.awssld__bullets{
+    bottom: 5px;
+    z-index: 5;
 }
 
-.block-1{
-    position: absolute;
-    height: 100%;
-    right: -100%;
-    transition: left 1s;
-    z-index: 1;
-    height: 100%;
-    visibility: hidden;
-}
+/* E39D22 */
 
-.block-1 img{
-    width: 100%;
-    height: 100%;
-}
-
-#right{
-    position: absolute;
-    height: 15%;
-    width: 3%;
-    left: 0;
-    z-index: 3;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#left{
-    position: absolute;
-    height: 15%;
-    width: 3%;
-    right: 0;
-    z-index: 3;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#dot-0{
-    position: absolute;
-    bottom: 0;
-    z-index: 3;
-    left: 40%;
-}
-#dot-1{
-    position: absolute;
-    bottom: 0;
-    z-index: 3;
-    left: 45%;
-
-}

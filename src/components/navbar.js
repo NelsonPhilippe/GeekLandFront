@@ -2,7 +2,7 @@ import * as React from "react";
 import './../css/components/Nav.css'
 import { Link } from "react-router-dom";
 import SearchBar from './SearchBar'
-import Profile from './ProfileMenu'
+// import Profile from './ProfileMenu'
 
 class Navbar extends React.Component {
 
@@ -31,7 +31,7 @@ class Navbar extends React.Component {
                 onClick={() => this.hoverProfile()}
     
                 />
-                <Profile />
+                {/* <Profile /> */}
             </div>
         );
     }
