@@ -11,7 +11,7 @@ export default class ProfileMenuNC extends React.Component {
             <div className="menu-profile none">
                 <Link to='/subscribe'><h4>Inscription</h4></Link>
                 <div></div>
-                <h4>Se connecter</h4>
+                <Link to='/login'><h4>Connexion</h4></Link>
             </div>
         );
     }
