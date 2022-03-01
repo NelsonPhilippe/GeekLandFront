@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar"
 import CarouselHome  from "../components/CarouselHome";
 import CarouselPromo  from "../components/CarouselPromo"
 import CarouselForYou from "../components/CarouselForYou"
+import Footer from "../components/Footer"
 
 class Home extends React.Component{
     render(){
@@ -13,6 +14,7 @@ class Home extends React.Component{
                 <CarouselHome />
                 <CarouselPromo />
                 <CarouselForYou />
+                <Footer />
             </div>
         );
     }
