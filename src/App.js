@@ -4,6 +4,7 @@ import * as React from "react";
 
 import { Routes, Route } from "react-router-dom";
 import Home from './views/Home'
+import Login from './views/Login'
 // import Search from "./views/Search";
 
 class App extends React.Component {
@@ -12,6 +13,7 @@ class App extends React.Component {
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/subscribe" element={<Login />} />
         </Routes>
       </div>
     )
