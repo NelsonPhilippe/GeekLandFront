@@ -1,17 +1,20 @@
 // import logo from './logo.svg';
-// import './App.css';
+import './css/App.css';
 import * as React from "react";
-import { Routes, Route, Link } from "react-router-dom";
-import Search from "./views/Search";
+import { Routes, Route } from "react-router-dom";
+import Home from './views/Home'
+// import Search from "./views/Search";
 
-function App() {
-  return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Search />} />
-      </Routes>
-    </div>
-  );
+class App extends React.Component {
+  render (){
+    return(
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
+    )
+  }
 }
 
 export default App;

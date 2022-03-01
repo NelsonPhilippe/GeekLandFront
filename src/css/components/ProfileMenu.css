@@ -1,0 +1,25 @@
+.menu-profile{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 7.1vh;
+    background-color: #17202A;
+    width: 15vw;
+    visibility: hidden;
+    border-radius: 15px 0 0 15px;
+
+}
+
+.menu-profile div{
+    background-color: #2E86C1;
+    width:70%;
+    height: 1px;
+}
+
+
+.menu-profile h4{
+    color: white;
+}
