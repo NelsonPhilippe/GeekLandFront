@@ -1,7 +1,7 @@
 import React from "react";
 import AwesomeSlider from "react-awesome-slider";
 import 'react-awesome-slider/dist/styles.css';
-import './../css/components/CarouselHome.css'
+import './../../css/components/carousel/CarouselHome.css'
 
 
 export default class Carousel extends React.Component {

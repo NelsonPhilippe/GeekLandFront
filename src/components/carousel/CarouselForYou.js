@@ -1,7 +1,7 @@
 import * as React from 'react'
 import ItemsCarousel from 'react-items-carousel';
-import ProductHome from './ProductHome'
-import './../css/components/CarouselPromo.css'
+import ProductHome from './../ProductHome'
+import './../../css/components/carousel/CarouselHomeArticle.css'
 
 
 export default class CarouselPromo extends React.Component {
@@ -27,9 +27,9 @@ export default class CarouselPromo extends React.Component {
         } = this.state;
 
         return (
-            <div className="promo">
-                <div className="promo-cat">
-                    <h1>Promo</h1>
+            <div className="foryou">
+                <div className="foryou-cat">
+                    <h1>Pour vous</h1>
                 </div>
                 <ItemsCarousel
 

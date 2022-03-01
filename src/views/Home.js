@@ -1,9 +1,9 @@
 
 import * as React from "react";
 import Navbar from "../components/Navbar"
-import CarouselHome  from "../components/CarouselHome";
-import CarouselPromo  from "../components/CarouselPromo"
-import CarouselForYou from "../components/CarouselForYou"
+import CarouselHome  from "../components/carousel/CarouselHome";
+import CarouselPromo  from "../components/carousel/CarouselPromo"
+import CarouselForYou from "../components/carousel/CarouselForYou"
 import Footer from "../components/Footer"
 
 class Home extends React.Component{
