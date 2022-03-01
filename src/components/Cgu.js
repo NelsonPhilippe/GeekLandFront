@@ -1,6 +1,6 @@
 import "../css/cgu.css";
 
-function cgu(){
+export default function cgu(){
     return (
         <div>
             <div className="cgu">
@@ -107,4 +107,3 @@ function cgu(){
         </div>
     );
 }
-export default cgu;

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+
+.menu-profile{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 7.1vh;
+    background-color: #17202A;
+    width: 15vw;
+    border-radius: 15px 0 0 15px;
+    z-index: 10;
+    font-family: 'Revalia', cursive;
+    font-size: 80%;
+
+}
+
+.menu-profile div{
+    background-color: #2E86C1;
+    width:70%;
+    height: 1px;
+}
+
+
+.menu-profile h4{
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+}
+
+.menu-profile h4:hover{
+    color: #c88d23;
+}
+
+
+.show{
+    visibility: visible;
+}
+
+.none{
+    visibility: hidden;
+}

@@ -1,19 +1,21 @@
 // import logo from './logo.svg';
-// import './App.css';
+import './css/App.css';
 import * as React from "react";
-import { Routes, Route,  } from "react-router-dom";
-import Fieldlogin from './component/Fieldlogin'
 
+import { Routes, Route } from "react-router-dom";
+import Home from './views/Home'
+// import Search from "./views/Search";
 
-function App() {
-  return (
-    <div className="App">
-      
-      <Routes>
-        <Route path="/" element={<Fieldlogin />} />
-      </Routes>
-    </div>
-  );
+class App extends React.Component {
+  render (){
+    return(
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
+    )
+  }
 }
 
 export default App;
