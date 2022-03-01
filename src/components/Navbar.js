@@ -2,22 +2,35 @@ import * as React from "react";
 import './../css/components/Nav.css'
 import { Link } from "react-router-dom";
 import SearchBar from './SearchBar'
-// import Profile from './ProfileMenu'
+import Profile from './ProfileMenuNC'
 
 class Navbar extends React.Component {
 
+    constructor(props) {
+        super(props)
+        this.state = {
+            visibility: 'none'
+        }
+    }
+
 
     hoverProfile() {
-        let profile = document.getElementById('menu-profile');
+        
+        let visibility = this.state.visibility
+        let element = document.querySelector('.menu-profile')
 
-
-        if(profile.style.visibility === "visible"){
-            profile.style.visibility = "hidden";
-            return;
+        if(visibility === 'none'){
+            this.setState({visibility: 'show'})
+            element.classList.add('show')
+            element.classList.remove('none')
+            
         }
 
-
-        profile.style.visibility = 'visible';
+        if(visibility === 'show'){
+            this.setState({visibility: 'none'})
+            element.classList.add('none')
+            element.classList.remove('show')
+        }
 
     }
 
@@ -29,9 +42,8 @@ class Navbar extends React.Component {
                 <img id="menu" src='/img/Menu.png' alt='menu_btn' />
                 <img id="profile" src='/img/profile.png' alt='profile_btn'
                 onClick={() => this.hoverProfile()}
-    
                 />
-                {/* <Profile /> */}
+                <Profile />
             </div>
         );
     }
