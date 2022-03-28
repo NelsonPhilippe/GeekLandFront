@@ -36,7 +36,6 @@
 .block {
   position: absolute;
   top: 45%;
-  border: 1px solid black;
   width: 100%;
   height: 50px;
 }
@@ -45,4 +44,30 @@
   width: 100%;
   height: 2px;
   background-color: white;
+}
+
+.block-info {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.block-info #titleInformation {
+  width: 15%;
+  text-align: center;
+  color: white;
+}
+
+#click {
+  width: 80%;
+  height: 50px;
+  border: 1px solid black;
+}
+
+#click p {
+  width: 70%;
+  font-size: 14px;
+  color: white;
 }
