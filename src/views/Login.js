@@ -23,7 +23,7 @@ export default class Fieldlogin extends React.Component {
                         <div className="password">
                             <label for="password">Mot de passe</label>
                             <input type="password" id="password" name="password" placeholder="Enter your Password" required="true" />
-                            <label id="password-label" for="password">Mot de passe oublier?</label>
+                            <label id="password-label" for="password">Mot de passe oublié?</label>
                         </div>
 
                         <div className="submit">
