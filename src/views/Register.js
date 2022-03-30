@@ -10,53 +10,66 @@ export default class Register extends React.Component {
                     <form action="" method="get" className="register-form">
 
                         <div className="username">
-                            <label for="login">Nom d'utilisateur</label>
-                            <input type="text" id="login" name="login" placeholder="Enter your username" required="true" />
+                            <label for="login">Nom d'utilisateur: </label>
+                            <input type="text" id="login-register" name="login" placeholder="Username" required="true" />
                         </div>
 
                         <div className="pw">
-                            <label for="password">Mot de passe</label>
-                            <input type="password" id="password" name="password" placeholder="Enter your Password" required="true" />
+                            <label for="password">Mot de passe: </label>
+                            <input type="password" id="password-register" name="password" placeholder="Password" required="true" />
                         </div>
 
                         <div className="email">
-                            <label for="mailadress">Adresse Mail</label>
-                            <input type="email" id="mailadress" name="mailadress" placeholder="Enter your mail" required="true" />
+                            <label for="mailadress">Adresse Mail: </label>
+                            <input type="email" id="mailadress" name="mailadress" placeholder="E-mail" required="true" />
                         </div>
 
                         <div className="name">
-                            <label for="name">Nom</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your Name" required="true" />
-
-                            <label for="surname">Prénom</label>
-                            <input type="text" id="surname" name="surname" placeholder="Enter your surname" required="true" />
+                            <div className="nam">
+                                <label for="name">Nom: </label>
+                                <input type="text" id="name" name="name" placeholder="Name" required="true" />
+                            </div>
+                            <div className="surn">
+                                <label for="surname">Prénom: </label>
+                                <input type="text" id="surname" name="surname" placeholder="Surname" required="true" />
+                            </div>
                         </div>
 
                         <div className="adress">
-                            <label for="adress">Adresse</label>
-                            <input type="text" id="adress" name="adress" placeholder="Enter your address" required="true" />
+                            <label for="adress">Adresse: </label>
+                            <input type="text" id="adress" name="adress" placeholder="Address" required="true" />
                         </div>
 
                         <div className="city">
-                            <label for="postalcode">Code Postal</label>
-                            <input type="tel" id="postalcode" name="postalcode" placeholder="Enter your postalcode" required="true" />
-
-                            <label for="city">Ville</label>
-                            <input type="text" id="country" name="country" placeholder="Enter your country" required="true" />
+                            <div className="pc">
+                                <label for="postalcode">Code Postal: </label>
+                                <input type="tel" id="postalcode" name="postalcode" placeholder="Postal code" required="true" />
+                            </div>
+                            <div className="cit">
+                                <label for="city">Ville: </label>
+                                <input type="text" id="city" name="city" placeholder="City" required="true" />
+                            </div>
                         </div>
 
                         <div className="country">
-                            <label for="country">Pays</label>
-                            <input type="text" id="country" name="country" placeholder="Enter your country" required="true" />
+                            <label for="country">Pays: </label>
+                            <input type="text" id="country" name="country" placeholder="Country" required="true" />
                         </div>
 
-                        <div class="tel">
-                            <label for="phone">Téléphone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required="false" />
+                        <div class="tel-news">
+                            <div className="tel">
+                                <label for="phone">Téléphone: </label>
+                                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required="false" />
+                            </div>
+                        </div>
+                        
+                        <div className="news-letter">
+                            <input type="checkbox" id="check-news" name="login" />
+                            <label id="check-news-label" for="login">S'abonner à la Newsletter</label>
                         </div>
 
                         <div className="reg">
-                            <button id="reg">Inscription</button>
+                            <button id="reg">Créer un compte</button>
                         </div>
                     </form>
                 </div>
