@@ -6,6 +6,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./views/Home";
 import Login from "./views/Login";
 import ProfileSetting from "./components/settings/ProfileSetting";
+import FAQ from "./components/Faq";
+
 // import Search from "./views/Search";
 
 class App extends React.Component {
@@ -16,6 +18,7 @@ class App extends React.Component {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profilesetting" element={<ProfileSetting />} />
+          <Route path="/Faq" element={<FAQ />} />
         </Routes>
       </div>
     );
