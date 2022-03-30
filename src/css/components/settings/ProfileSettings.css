@@ -1,7 +1,7 @@
 .profile-settings-container {
   position: relative;
   width: 70%;
-  height: 1600px;
+  height: 1520px;
   margin: 0 auto;
   margin-top: 100px;
   background: rgb(227, 157, 34, 0.5);
@@ -51,7 +51,7 @@
   height: 55px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -86,7 +86,7 @@
 
 .general-coordonnes {
   position: relative;
-  top: 25%;
+  top: 15%;
   left: 10%;
   width: 80%;
   height: 210px;
@@ -120,10 +120,10 @@
 
 .parametre {
   position: relative;
-  top: 25%;
+  top: 15%;
   left: 10%;
   width: 80%;
-  height: 500px;
+  height: 525px;
   margin-top: 100px;
   border-radius: 10px;
   display: flex;
@@ -177,10 +177,19 @@
   border-radius: 10px;
 }
 
+.mdp h2 {
+  position: absolute;
+  top: 1%;
+  left: 12%;
+  color: white;
+}
+
 #form-mdp {
-  position: relative;
+  position: absolute;
+  left: 8%;
+  top: 14%;
   width: 90%;
-  height: 200px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -193,13 +202,59 @@
   flex-direction: column;
   justify-content: space-around;
   width: 80%;
-  margin: auto;
 }
 
 #valide {
   position: absolute;
-  top: 110%;
-  right: 5%;
-  width: 20%;
-  height: 30px;
+  right: 8.5%;
+  bottom: -15%;
+  width: 25%;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  background-color: #2e86c1;
+  border: 1px solid #f3faff;
+  cursor: pointer;
+}
+
+#password-verification,
+#password-new,
+#password-ancien {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: #2e86c1;
+}
+
+.verification,
+.new,
+.ancien {
+  width: 90%;
+  height: 100px;
+}
+
+.verification label,
+.new label,
+.ancien label {
+  color: white;
+}
+
+#langue,
+#save-mdp {
+  width: 70%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+#langue p,
+#save-mdp p {
+  width: 70%;
+  font-size: 14px;
+  color: white;
+  margin: 0;
 }

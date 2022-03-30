@@ -12,6 +12,8 @@ export default class ProfileSettings extends React.Component {
       <div className="profile-settings-container">
         <h1>Informations</h1>
 
+        {/* Information général du profile */}
+
         <div className="general-information">
           <h2>Informations générales</h2>
 
@@ -19,7 +21,7 @@ export default class ProfileSettings extends React.Component {
             <div className="block-info">
               <p id="titleInformation">Photo</p>
               <div id="click" onClick={this.hello}>
-                <p>Ajouter une photo de profile pour votre compte</p>
+                <p>Ajouter une photo de profile</p>
                 <div className="icon">
                   <IoIosArrowForward size={30} />
                 </div>
@@ -48,6 +50,8 @@ export default class ProfileSettings extends React.Component {
           </div>
         </div>
 
+        {/* Changement des coordonnées */}
+
         <div className="general-coordonnes">
           <h2>Coordonnées</h2>
 
@@ -74,6 +78,8 @@ export default class ProfileSettings extends React.Component {
           </div>
         </div>
 
+        {/* Différent paramètres */}
+
         <div className="parametre">
           <div className="general-pref">
             <h3>Préférences générales</h3>
@@ -81,7 +87,7 @@ export default class ProfileSettings extends React.Component {
             <div className="pref">
               <div className="block-pref">
                 <p id="titlePref">Téléphone</p>
-                <div id="click" onClick={this.hello}>
+                <div id="langue" onClick={this.hello}>
                   <p>06 05 25 14 58</p>
                   <div className="icon">
                     <IoIosArrowForward size={30} />
@@ -91,7 +97,7 @@ export default class ProfileSettings extends React.Component {
               <div className="line-white"></div>
               <div className="block-pref">
                 <p id="titlePref">Téléphone</p>
-                <div id="click" onClick={this.hello}>
+                <div id="save-mdp" onClick={this.hello}>
                   <p>06 05 25 14 58</p>
                   <div className="icon">
                     <IoIosArrowForward size={30} />
@@ -101,33 +107,23 @@ export default class ProfileSettings extends React.Component {
             </div>
           </div>
 
+          {/* Changement de mot de passe */}
+
           <div className="mdp">
-            <h3>Mot de passe</h3>
+            <h2>Mot de passe</h2>
 
             <form id="form-mdp">
               <div className="ancien">
                 <label>Ancien mot de passe :</label>
-                <input
-                  type="password"
-                  id="password-ancien"
-                  placeholder="Votre ancien mot de passe"
-                />
+                <input type="password" id="password-ancien" />
               </div>
               <div className="new">
                 <label>Nouveau mot de passe :</label>
-                <input
-                  type="password"
-                  id="password-new"
-                  placeholder="Votre nouveau mot de passe"
-                />
+                <input type="password" id="password-new" />
               </div>
               <div className="verification">
                 <label>Vérification :</label>
-                <input
-                  type="password"
-                  id="password-verification"
-                  placeholder="Verification du mot de passe"
-                />
+                <input type="password" id="password-verification" />
               </div>
               <input type="submit" id="valide" value="Valider" />
             </form>
