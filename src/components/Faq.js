@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./../css/components/Faq.css";
+import "./../css/components/FAQ.css";
 import { IoIosArrowForward } from "react-icons/io";
 
 export default class FAQ extends React.Component {
