@@ -1,100 +1,102 @@
 .container-contact {
-    position: relative;
-    top: 100px;
-    width: 50%;
-    height: 1100px;
-    background-color: rgb(227, 157, 34, 0.5);
-    margin: 0 auto;
-    /* margin-top: 100px; */
-    border-radius: 5px;
+  position: relative;
+  top: 100px;
+  width: 50%;
+  height: 1100px;
+  background-color: rgb(227, 157, 34, 0.5);
+  margin: 0 auto;
+  /* margin-top: 100px; */
+  border-radius: 5px;
 }
 
-.container-contact h1{
-    position: absolute;
-    top: 5%;
-    left: 15%;
-    color: #F3FAFF;
+.container-contact h1 {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  color: #f3faff;
 }
 
 #contactForm {
-      position: absolute;
-      top: 20%;
-      left: 50%;
-      transform: translate(-50%);
-      width: 70%;
-      height: 700px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 70%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .name {
-      position: relative;
-      top: 0;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.sujet{
-      width: 100%;
-      margin-top: 10px;
-      display: flex;
-      flex-direction: column;
+.sujet {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-.requete{
-    width: 100%;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
+.requete {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-.name label, .sujet label, .requete label {
-    font-weight: bold;
-    color: #17202A;
+.name label,
+.sujet label,
+.requete label {
+  font-weight: bold;
+  color: #17202a;
 }
 
-.name input, .sujet input{
-    width: 100%;
-    height: 40px;
-    margin-top: 10px;
-    border-radius: 10px;
-    border: none;
-    padding-left: 10px;
+.name input,
+.sujet input {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
 }
 
-.requete textarea{
-    width: 100%;
-    height: 400px;
-    margin-top: 10px;
-    padding-top: 15px;
-    border-radius: 10px;
-    border: none;
-    padding-left: 10px;
-    resize: none;
+.requete textarea {
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+  padding-top: 15px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+  resize: none;
 }
 
-
-#btn-requete{
-    width: 200px;
-    height: 45px;
-    margin: 0 auto;
-    margin-top: 50px;
-    background-color: #E39D22;
-    border: none;
-    border-radius:10px;
-    color: #17202A;
-    font-weight: bold;
-    font-size: 1em;
-    cursor: pointer;
+#btn-requete {
+  width: 200px;
+  height: 45px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #e39d22;
+  border: none;
+  border-radius: 10px;
+  color: #17202a;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
 }
 
-a{
-    position:absolute;
-    bottom: 10%;
-    width: 100%;
-    color: #2E86C1;
-    font-size: 1.6vw;
-    text-align: center;
+.container-contact a {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  color: #2e86c1;
+  font-size: 1.6vw;
+  text-align: center;
 }
