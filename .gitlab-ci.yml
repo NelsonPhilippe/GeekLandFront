@@ -1,0 +1,26 @@
+image: node:latest
+
+cache:
+  paths:
+    - node_modules/
+
+build:
+  script:
+    - npm install
+    - npm run build
+
+deploy:
+  script:
+    - chmod 600 $DEPLOY_SSH
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add $DEPLOY_SSH
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    # deploy core everywere
+    - scp -i $DEPLOY_SSH build/ gitlab@185.157.247.242:/home/geekland/front
+    - ssh -i $DEPLOY_SSH gitlab@$server 'screen -x geekfront'
+    - ssh -i $DEPLOY_SSH gitlab@$server 'serve'
+
+
+
