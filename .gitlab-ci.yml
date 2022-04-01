@@ -1,15 +1,24 @@
-image: node:latest
+
+stages:
+  - build
+  - deploy
 
 cache:
   paths:
     - node_modules/
 
 build:
+  image: node:latest
+  stage: build
   script:
     - npm install
     - npm run build
 
 deploy:
+  stage: deploy
+  when: manual
+  only:
+    - master
   script:
     - chmod 600 $DEPLOY_SSH
     - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
