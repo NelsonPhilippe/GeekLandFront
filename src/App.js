@@ -17,8 +17,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Navbar />
+
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profilesetting" element={<ProfileSetting />} />
           <Route path="/FAQ" element={<FAQ />} />
@@ -26,7 +28,6 @@ class App extends React.Component {
           <Route path="/settings" element={<Settings />} />
         </Routes>
 
-        <Navbar />
         <Footer />
       </div>
     );
