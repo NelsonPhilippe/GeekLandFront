@@ -28,7 +28,7 @@ export default class Fieldlogin extends React.Component {
 
                         <div className="submit">
                             <button id="submit">Connexion   </button>
-                            <a href="#">Créer un nouveau compte</a>
+                            <a href="/">Créer un nouveau compte</a>
                         </div>
                     </form>
                 </div>
