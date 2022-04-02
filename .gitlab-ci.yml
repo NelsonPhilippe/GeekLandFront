@@ -19,6 +19,8 @@ deploy:
   only:
     - main
   when: manual
+  environment:
+    name: production
   script:
     - chmod 600 $DEPLOY_SSH
     - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
