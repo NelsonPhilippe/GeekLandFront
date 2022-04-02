@@ -1,7 +1,6 @@
 
 stages:
   - build
-  - deploy
 
 cache:
   paths:
@@ -21,25 +20,3 @@ build:
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     # deploy core everywere
     - scp -i $DEPLOY_SSH -P 198 -r build/* root@185.157.247.242:/srv/react-app/
-#    - ssh -i $DEPLOY_SSH -P 198 root@$185.157.247.242 'screen -x geekfront'
-#    - ssh -i $DEPLOY_SSH -P 198 root@$185.157.247.242 'serve'
-
-deploy:
-  stage: deploy
-  only:
-    - main
-  when: manual
-  script:
-    - chmod 600 $DEPLOY_SSH
-    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
-    - eval $(ssh-agent -s)
-    - ssh-add $DEPLOY_SSH
-    - mkdir -p ~/.ssh
-    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-    # deploy core everywere
-    - scp -i $DEPLOY_SSH -P 198 build/* root@185.157.247.242:/srv/nginx/
-#    - ssh -i $DEPLOY_SSH -P 198 root@$185.157.247.242 'screen -x geekfront'
-#    - ssh -i $DEPLOY_SSH -P 198 root@$185.157.247.242 'serve'
-
-
-
