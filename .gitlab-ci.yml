@@ -18,6 +18,7 @@ deploy:
   stage: deploy
   only:
     - main
+  when: manual
   script:
     - chmod 600 $DEPLOY_SSH
     - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
@@ -26,9 +27,9 @@ deploy:
     - mkdir -p ~/.ssh
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     # deploy core everywere
-    - scp -i $DEPLOY_SSH build/ gitlab@185.157.247.242:/home/geekland/front
-    - ssh -i $DEPLOY_SSH gitlab@$server 'screen -x geekfront'
-    - ssh -i $DEPLOY_SSH gitlab@$server 'serve'
+    - scp -p 198 -i $DEPLOY_SSH build/ gitlab@185.157.247.242:/home/geekland/front
+    - ssh -p 198 -i $DEPLOY_SSH gitlab@$server 'screen -x geekfront'
+    - ssh -p 198 -i $DEPLOY_SSH gitlab@$server 'serve'
 
 
 
