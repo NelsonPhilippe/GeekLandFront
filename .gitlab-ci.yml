@@ -16,7 +16,6 @@ build:
 
 deploy:
   stage: deploy
-  when: manual
   only:
     - master
   script:
