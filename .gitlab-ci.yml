@@ -27,7 +27,7 @@ deploy:
     - mkdir -p ~/.ssh
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     # deploy core everywere
-    - scp build/ -i $DEPLOY_SSH -p 198 root@hiroshi:/home/geekland/front
+    - scp build/ -i $DEPLOY_SSH -p 198 root@185.157.247.242:/home/geekland/front
     - ssh -i $DEPLOY_SSH -p 198 root@$185.157.247.242 'screen -x geekfront'
     - ssh -i $DEPLOY_SSH -p 198 root@$185.157.247.242 'serve'
 
