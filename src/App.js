@@ -42,8 +42,8 @@ class App extends React.Component {
           <Route path="/register" element={<Register />} />
 >>>>>>> add register + del component fieldlogin + navbar
           <Route path="/ForgottenPassword" element={<ForgottenPassword />} />
-          <Route path="BackUpCode" element={<BackUpCode />} />
-          <Route path="ResetPassword" element={<ResetPassword />} />
+          <Route path="/BackUpCode" element={<BackUpCode />} />
+          <Route path="/ResetPassword" element={<ResetPassword />} />
         </Routes>
       </div>
     );
