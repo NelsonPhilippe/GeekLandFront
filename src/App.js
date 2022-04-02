@@ -20,8 +20,8 @@ class App extends React.Component {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/ForgottenPassword" element={<ForgottenPassword />} />
-          <Route path="BackUpCode" element={<BackUpCode />} />
-          <Route path="ResetPassword" element={<ResetPassword />} />
+          <Route path="/BackUpCode" element={<BackUpCode />} />
+          <Route path="/ResetPassword" element={<ResetPassword />} />
         </Routes>
       </div>
     )
