@@ -20,7 +20,7 @@ build:
     - mkdir -p ~/.ssh
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     # deploy core everywere
-    - scp -i $DEPLOY_SSH -P 198 -r build/ root@185.157.247.242:/srv/nginx/
+    - scp -i $DEPLOY_SSH -P 198 -r build/* root@185.157.247.242:/srv/react-app/
 #    - ssh -i $DEPLOY_SSH -P 198 root@$185.157.247.242 'screen -x geekfront'
 #    - ssh -i $DEPLOY_SSH -P 198 root@$185.157.247.242 'serve'
 
