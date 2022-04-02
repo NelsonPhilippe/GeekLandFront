@@ -13,16 +13,6 @@ build:
   script:
     - npm install
     - npm run build
-    - chmod 600 $DEPLOY_SSH
-    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
-    - eval $(ssh-agent -s)
-    - ssh-add $DEPLOY_SSH
-    - mkdir -p ~/.ssh
-    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-    # deploy core everywere
-    - scp build/ -p 198 geekland@185.157.247.242:/home/geekland/front
-    - ssh -i $DEPLOY_SSH -p 198 geekland@$185.157.247.242 'screen -x geekfront'
-    - ssh -i $DEPLOY_SSH -p 198 geekland@$185.157.247.242 'serve'
 
 deploy:
   stage: deploy
@@ -37,7 +27,7 @@ deploy:
     - mkdir -p ~/.ssh
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     # deploy core everywere
-    - scp build/ -p 198 geekland@185.157.247.242:/home/geekland/front
+    - scp build/ -i $DEPLOY_SSH -p 198 geekland@185.157.247.242:/home/geekland/front
     - ssh -i $DEPLOY_SSH -p 198 geekland@$185.157.247.242 'screen -x geekfront'
     - ssh -i $DEPLOY_SSH -p 198 geekland@$185.157.247.242 'serve'
 
