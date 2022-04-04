@@ -19,6 +19,7 @@ import Register from './views/Register';
 import ForgottenPassword from './views/ForgottenPassword';
 import BackUpCode from './views/BackUpCode';
 import ResetPassword from './views/ResetPassword';
+import Categories from './views/Categories';
 // import Search from "./views/Search";
 
 >>>>>>> add register + del component fieldlogin + navbar
@@ -42,8 +43,9 @@ class App extends React.Component {
           <Route path="/register" element={<Register />} />
 >>>>>>> add register + del component fieldlogin + navbar
           <Route path="/ForgottenPassword" element={<ForgottenPassword />} />
-          <Route path="/BackUpCode" element={<BackUpCode />} />
-          <Route path="/ResetPassword" element={<ResetPassword />} />
+          <Route path="BackUpCode" element={<BackUpCode />} />
+          <Route path="ResetPassword" element={<ResetPassword />} />
+          <Route path="categories" element={<Categories />} />
         </Routes>
       </div>
     );
