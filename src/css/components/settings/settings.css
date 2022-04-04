@@ -1,8 +1,9 @@
-/* .settings {
-  height: 600;
-  position: relative;
-} */
-.footer {
+.settings {
+  height: 100%;
+}
+.outlet {
   position: absolute;
-  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
 }

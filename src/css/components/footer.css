@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
 
 .footer {
-  position: relative;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 180px;
   background-color: #17202a;

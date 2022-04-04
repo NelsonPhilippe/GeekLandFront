@@ -1,14 +1,18 @@
-body {
+* {
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
-  height: 100%;
+  height: auto;
 }
+
+body {
+  /* overflow-x: hidden; */
+}
+
 .App {
-  height: 100%;
+  height: auto;
 }
+
 .Home {
-  background-color: #f3faff;
+  position: relative;
   height: 100%;
-  margin-bottom: 290px;
 }

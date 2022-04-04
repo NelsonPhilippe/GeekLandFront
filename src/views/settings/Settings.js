@@ -3,7 +3,8 @@ import SidebarSettings from "../../components/settings/Sidebar";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import "../../css/components/settings/settings.css";
-// import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import "../../css/App.css";
 
 export default class Settings extends React.Component {
   render() {
@@ -11,7 +12,10 @@ export default class Settings extends React.Component {
       <div className="settings">
         <Navbar />
         <SidebarSettings />
-        <div className="ba"></div>
+
+        <div className="outlet">
+          <Outlet />
+        </div>
         <Footer />
       </div>
     );
