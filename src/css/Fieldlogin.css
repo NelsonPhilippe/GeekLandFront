@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Marko+One&family=Revalia&display=swap');
 
-body{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-image: url("../../public/img/LogoGeekLand.png");
-    background-size: cover;
-
-
-}
 
 .connexion{
     display: flex;
