@@ -27,6 +27,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Navbar />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -47,6 +49,8 @@ class App extends React.Component {
           <Route path="ResetPassword" element={<ResetPassword />} />
           <Route path="categories" element={<Categories />} />
         </Routes>
+
+        <Footer />
       </div>
     );
   }

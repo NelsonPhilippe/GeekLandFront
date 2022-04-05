@@ -1,5 +1,4 @@
 import * as React from 'react'
-import ItemsCarousel from 'react-items-carousel';
 import ProductHome from './../ProductHome'
 import './../../css/components/carousel/CarouselHomeArticle.css'
 
@@ -31,7 +30,7 @@ export default class CarouselPromo extends React.Component {
                 <div className="foryou-cat">
                     <h1>Pour vous</h1>
                 </div>
-                <ItemsCarousel
+                {/* <ItemsCarousel
 
                     // Carousel configurations
                     numberOfCards={4}
@@ -55,7 +54,7 @@ export default class CarouselPromo extends React.Component {
                     <ProductHome img="Tanjiro Hinokami.jpg" title="test" />
                     <ProductHome img="Tanjiro Hinokami.jpg" title="test" />
 
-                </ItemsCarousel>
+                </ItemsCarousel> */}
             </div>
         );
     }
