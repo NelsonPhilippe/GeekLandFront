@@ -11,13 +11,14 @@ import Contact from "./components/Contact";
 import Settings from "./views/settings/Settings";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import CarouselPromo from "./components/carousel/CarouselPromo";
 // import Search from "./views/Search";
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Navbar />
+        {/* <Navbar /> */}
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -26,9 +27,10 @@ class App extends React.Component {
           <Route path="/FAQ" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/carousel" element={<CarouselPromo />} />
         </Routes>
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }
