@@ -34,7 +34,7 @@ export default class Contact extends React.Component {
           <input type="submit" id="btn-requete" value="Envoyer la requête" />
         </form>
 
-        <Link to="/FAQ">F.A.Q?</Link>
+        <Link to="/settings/faq">F.A.Q?</Link>
       </div>
     );
   }

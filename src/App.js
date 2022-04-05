@@ -2,13 +2,14 @@
 import "./css/App.css";
 import * as React from "react";
 
-import { Routes, Route } from "react-router-dom";
+import { Router, Routes, Route } from "react-router-dom";
 import Home from "./views/Home";
 import Login from "./views/Login";
-import Settings from "./views/settings/Settings";
+import Settings from "./views/Settings";
 import Contact from "./components/Contact";
 import ProfileSetting from "./components/settings/ProfileSetting";
 import FAQ from "./components/FAQ";
+import Securite from "./components/settings/Securite";
 
 // import Search from "./views/Search";
 
@@ -23,7 +24,7 @@ class App extends React.Component {
             <Route path="contact" element={<Contact />}></Route>
             <Route path="faq" element={<FAQ />}></Route>
             <Route path="profilesetting" element={<ProfileSetting />}></Route>
-            <Route path="contact" element={<Contact />}></Route>
+            <Route path="securite" element={<Securite />}></Route>
             <Route path="contact" element={<Contact />}></Route>
           </Route>
         </Routes>

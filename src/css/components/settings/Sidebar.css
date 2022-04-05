@@ -2,12 +2,19 @@
 
 .sidebar {
   position: absolute;
-  top: 7vh;
+  top: 0;
   left: 0;
   height: 100%;
   width: 15vw;
   background-color: #17202a;
   font-family: "Revalia", sans-serif;
+  z-index: 0;
+}
+.sidebar-link {
+  position: fixed;
+  top: 7vh;
+  width: 15vh;
+  height: 100%;
 }
 .sidebar a {
   display: flex;
