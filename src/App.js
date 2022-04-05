@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import ProfileSetting from "./components/settings/ProfileSetting";
 import FAQ from "./components/FAQ";
 import Securite from "./components/settings/Securite";
+import Paiement from "./components/settings/Paiement";
 
 // import Search from "./views/Search";
 
@@ -25,7 +26,7 @@ class App extends React.Component {
             <Route path="faq" element={<FAQ />}></Route>
             <Route path="profilesetting" element={<ProfileSetting />}></Route>
             <Route path="securite" element={<Securite />}></Route>
-            <Route path="contact" element={<Contact />}></Route>
+            <Route path="paiement" element={<Paiement />}></Route>
           </Route>
         </Routes>
       </div>
