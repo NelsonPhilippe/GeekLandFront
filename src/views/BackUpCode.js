@@ -12,7 +12,7 @@ export default class BackUpCode extends React.Component {
                         <div className="backup-code">
                             <label for="backupcode-code">Entrez votre code</label>
                             <input type="text" name="backupcode-code" id="backupcode-code" placeholder="Entrez votre code" required="true" />
-                            <a href="">Envoyer un nouveau code</a>
+                            <a href="/">Envoyer un nouveau code</a>
                         </div>
                         <div className="send">
                             <button id="send">Envoyer</button>
