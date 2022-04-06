@@ -1,36 +1,29 @@
 .container-contact {
-  position: relative;
-  top: 100px;
-  width: 70%;
-  height: 100%;
+  width: 90%;
+  height: auto;
   background-color: rgb(227, 157, 34, 0.5);
   margin: 0 auto;
-  /* margin-top: 100px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-radius: 5px;
 }
 
 .container-contact h1 {
-  position: absolute;
-  top: 5%;
-  left: 15%;
-  color: #f3faff;
+  color: #17202a;
+  margin-left: 60px;
 }
 
 #contactForm {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%);
   width: 70%;
   height: 700px;
+  margin: 0 auto;
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .name {
-  position: relative;
-  top: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -92,11 +85,25 @@
   cursor: pointer;
 }
 
-.container-contact a {
-  position: absolute;
-  bottom: 2%;
+#btn-requete:hover {
+  background-color: white;
+  color: #e39d22;
+  border: 1px solid #e39d22;
+}
+
+.link-faq {
   width: 100%;
-  color: #2e86c1;
-  font-size: 1.6vw;
+  height: auto;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.link-faq a {
+  font-size: 1.6vw;
+  color: #2e86c1;
+}
+
+.link-faq a:hover {
+  color: #e39d22;
 }

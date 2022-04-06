@@ -1,5 +1,5 @@
 .Nav {
-  position: relative;
+  position: fixed;
   display: flex;
   flex-direction: row;
   width: 100%;

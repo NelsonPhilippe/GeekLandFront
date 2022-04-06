@@ -1,0 +1,9 @@
+.historqiue-container {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  background: rgb(227, 157, 34, 0.5);
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}

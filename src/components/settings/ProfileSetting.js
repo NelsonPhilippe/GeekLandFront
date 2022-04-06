@@ -82,7 +82,7 @@ export default class ProfileSettings extends React.Component {
 
         <div className="parametre">
           <div className="general-pref">
-            <h3>Préférences générales</h3>
+            <h2>Préférences générales</h2>
 
             <div className="pref">
               <div className="block-pref">
@@ -113,19 +113,21 @@ export default class ProfileSettings extends React.Component {
             <h2>Mot de passe</h2>
 
             <form id="form-mdp">
-              <div className="ancien">
+              <div className="ancien-mdp">
                 <label>Ancien mot de passe :</label>
                 <input type="password" id="password-ancien" />
               </div>
-              <div className="new">
+              <div className="new-mdp">
                 <label>Nouveau mot de passe :</label>
                 <input type="password" id="password-new" />
               </div>
-              <div className="verification">
+              <div className="verification-mdp">
                 <label>Vérification :</label>
                 <input type="password" id="password-verification" />
               </div>
-              <input type="submit" id="valide" value="Valider" />
+              <div className="btn-valide">
+                <input type="submit" id="valide" value="Valider" />
+              </div>
             </form>
           </div>
         </div>

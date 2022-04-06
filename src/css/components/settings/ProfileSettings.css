@@ -1,43 +1,37 @@
 .profile-settings-container {
-  position: relative;
   width: 90%;
   height: 100%;
   margin: 0 auto;
-  margin-top: 100px;
   background: rgb(227, 157, 34, 0.5);
   border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .profile-settings-container h1 {
-  position: absolute;
-  top: 4%;
-  left: 8%;
   color: #17202a;
+  margin-left: 60px;
 }
 
 .general-information {
-  position: relative;
-  top: 15%;
-  left: 10%;
   width: 80%;
-  height: 280px;
+  height: auto;
   background-color: #e39d22;
   border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-top: 10px;
 }
 
 .general-information h2,
 .general-coordonnes h2 {
-  position: absolute;
-  top: 5%;
-  left: 5%;
   color: white;
+  margin-left: 20px;
 }
 
 .Information {
-  position: absolute;
-  top: 40%;
   width: 100%;
-  height: 50px;
+  height: auto;
 }
 
 .line-white {
@@ -85,21 +79,18 @@
 }
 
 .general-coordonnes {
-  position: relative;
-  top: 15%;
-  left: 10%;
   width: 80%;
-  height: 210px;
+  height: auto;
   background-color: #e39d22;
+  margin: 0 auto;
   margin-top: 100px;
   border-radius: 10px;
+  padding-top: 10px;
 }
 
 .coordonnees {
-  position: absolute;
-  top: 40%;
   width: 100%;
-  height: 50px;
+  height: auto;
 }
 
 .block-cord {
@@ -119,11 +110,10 @@
 }
 
 .parametre {
-  position: relative;
-  top: 15%;
-  left: 10%;
   width: 80%;
-  height: 525px;
+  height: auto;
+  padding-top: 10px;
+  margin: 0 auto;
   margin-top: 100px;
   border-radius: 10px;
   display: flex;
@@ -132,11 +122,11 @@
 }
 
 .general-pref {
-  position: relative;
   width: 48%;
-  height: 100%;
+  height: auto;
   background-color: #e39d22;
   border-radius: 10px;
+  padding-top: 20px;
 }
 
 .block-pref {
@@ -148,101 +138,99 @@
   align-items: center;
 }
 
-.general-pref h3 {
-  position: absolute;
-  top: 1%;
-  left: 3%;
+.general-pref h2 {
   color: white;
+  margin-left: 20px;
 }
 
 .block-pref #titlePref {
   width: 10%;
   text-align: center;
   margin: 0;
+  margin-left: 20px;
   color: white;
 }
 
 .pref {
-  position: absolute;
-  top: 40%;
   width: 100%;
-  height: 50px;
+  height: auto;
+  margin-top: 50px;
 }
 
 .mdp {
-  position: relative;
   width: 48%;
   height: 100%;
   background-color: #e39d22;
   border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .mdp h2 {
-  position: absolute;
-  top: 1%;
-  left: 12%;
   color: white;
+  margin-left: 20px;
 }
 
 #form-mdp {
-  position: absolute;
-  left: 8%;
-  top: 14%;
   width: 90%;
-  height: 350px;
+  height: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.ancien,
-.new,
-.verification {
+.ancien-mdp,
+.new-mdp,
+.verification-mdp {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 80%;
 }
-
+.btn-valide {
+  width: 100%;
+  text-align: right;
+}
 #valide {
-  position: absolute;
-  right: 8.5%;
-  bottom: -15%;
-  width: 25%;
-  height: 40px;
+  width: 105px;
   border-radius: 5px;
+  height: 45px;
   color: white;
   background-color: #2e86c1;
   border: 1px solid #f3faff;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 #password-verification,
 #password-new,
 #password-ancien {
-  width: 100%;
+  width: 98%;
   height: 45px;
   border-radius: 5px;
   border: 1px solid white;
+  color: white;
+  margin-bottom: 20px;
   background-color: #2e86c1;
 }
 
-.verification,
-.new,
-.ancien {
-  width: 90%;
-  height: 100px;
+#password-verification:focus,
+#password-new:focus,
+#password-ancien:focus {
+  color: white;
 }
 
-.verification label,
-.new label,
-.ancien label {
+.verification-mdp label,
+.new-mdp label,
+.ancien-mdp label {
   color: white;
+  margin-bottom: 20px;
 }
 
 #langue,
 #save-mdp {
-  width: 70%;
+  width: 60%;
   height: 50px;
   display: flex;
   flex-direction: row;

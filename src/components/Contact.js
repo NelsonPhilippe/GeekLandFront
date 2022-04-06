@@ -8,7 +8,7 @@ export default class Contact extends React.Component {
       <div className="container-contact">
         <h1>Contact</h1>
 
-        <form id="contactForm">
+        <form id="contactForm" method="post" action="/">
           <div className="name">
             <label>Nom / Prénom</label>
             <input
@@ -33,8 +33,9 @@ export default class Contact extends React.Component {
 
           <input type="submit" id="btn-requete" value="Envoyer la requête" />
         </form>
-
-        <Link to="/settings/faq">F.A.Q?</Link>
+        <div className="link-faq">
+          <Link to="/settings/faq">F.A.Q?</Link>
+        </div>
       </div>
     );
   }

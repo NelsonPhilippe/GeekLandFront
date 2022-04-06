@@ -13,6 +13,7 @@ export default class Settings extends React.Component {
         <Navbar />
         <SidebarSettings />
         {/* <Footer /> */}
+
         <div className="outlet">
           <Outlet />
         </div>

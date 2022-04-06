@@ -33,7 +33,7 @@ export default class Paiement extends React.Component {
 
           <div className="new-card">
             <h2>Ajouter un moyen de paiement</h2>
-            <form className="add-card">
+            <form id="add-card" method="post" action="/">
               <div className="card-on-name">
                 <label>Nom et Prénom du titulaire :</label>
                 <input type="text" id="name-card" placeholder="Nom et Prénom" />
