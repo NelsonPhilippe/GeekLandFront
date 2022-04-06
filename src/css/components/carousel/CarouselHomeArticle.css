@@ -1,134 +1,25 @@
-body{
-    height: 100vh;
-}
-
-.promo{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-}
-
 .carousel{
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 15%;
+    width: 100%;
+    height: 30vh;
+    background-color: gray;
 }
 
-
-.containter-carousel{
-    position: absolute;
+.carousel ul{
+    position: relative;
     display: flex;
-    align-items: center;
     flex-direction: row;
+    /* width: 100%; */
     height: 100%;
-    z-index: 0;
-}
-
-.item-carousel {
-    width: 10%;
-    height: 100%;
-    margin-right: 5px;
-}
-
-.item-carousel img{
-    width: 100%;
-    height: 100%;
-}
-
-
-.btn{
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 45%;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-.btn-left{
-    position: relative;
-    background-color: #E39D22;
-    width: 3%;
-    height: 100%;
-    border-radius: 0 60% 60% 0;
-    z-index: 1;
-
-}
-
-.btn-right{
-    position: relative;
-    background-color: #E39D22;
-    width: 3%;
-    height: 100%;
-    border-radius: 60% 0 0 60%;
-    z-index: 1;
-
-}
-
-.btn-left::before{
-    position: absolute;
-    content: '';
-    border-bottom: 3px solid white;
-    border-left: 3px solid white;
-    height: 1em;
-    width: 1em;
-    /* background-color: aqua; */
-    left: 55%;
-    top: 50%;
     padding: 0;
-    transform: rotate(45deg) translate(-50%, -50%) ;
-    transform-origin: 0 0;
-    
-}
-
-.btn-left:hover{
-    cursor: pointer;
 
 }
 
-
-.btn-right::before{
-    position: absolute;
-    content: '';
-    border-top: 3px solid white;
-    border-right: 3px solid white;
-    height: 1em;
-    width: 1em;
-    /* background-color: aqua; */
-    left: 45%;
-    top: 50%;
+.carousel li{
+    list-style: none;
     padding: 0;
-    transform: rotate(45deg) translate(-50%, -50%) ;
-    transform-origin: 0 0;
-    
+    margin: 5px;
+    /* width: 20%; */
+    height: 100%;
+    background-color: green;
+    border: 1px black solid;
 }
-
-.btn-right:hover{
-    cursor: pointer;
-
-    
-}
-
-#ca_1{
-    position: absolute;
-    right: 200%;
-    transition: right 1s;
-}
-
-#ca_2{
-    position: absolute;
-    transition: right 1s;
-
-}
-
-#ca_3{
-    position: absolute;
-    right: -200%;
-    transition: right 1s;
-}
-
-
