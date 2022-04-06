@@ -27,7 +27,7 @@ class App extends React.Component {
           <Route path="/FAQ" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/settings" element={<Settings />} />
-          <Route path="/carousel" element={<CarouselPromo />} />
+          <Route path="/carousel" element={<CarouselPromo display={5} />} />
         </Routes>
 
         {/* <Footer /> */}
