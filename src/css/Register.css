@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&family=Revalia&display=swap');
+
+.register{
+    margin-left: 25%;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.fieldreg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    
+
+}
+
+.register-form{
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(46, 134, 193, 45%);
+    border-radius: 40px;
+}
+
+.username, .pw, .email, .name, .adress, .city, .country, .tel{
+    margin-left: 5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start ;
+    font-family: "Marko One", sans-serif;
+    font-size: 20px;
+    
+}
+
+#login-register{
+    height: 30px;
+    width: 30vw;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+#login-register:focus{
+    outline: none;
+}
+
+#password-register{
+    height: 30px;
+    width: 30vw;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+#password-registers:focus{
+    outline: none;
+}
+
+#mailadress{
+    height: 30px;
+    width: 30vw;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+#mailadress:focus{
+    outline: none;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+}
+.nam, .surn{
+    display: flex;
+    flex-direction: column;
+}
+
+.surn{
+    margin-left: 6px;
+}
+
+#name, #surname{
+    height: 30px;
+    width: 20vw;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+#name, #surname:focus{
+    outline: none;
+}
+
+#adress{
+    height: 30px;
+    width: 30vw;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+#adress:focus{
+    outline: none;
+}
+
+.city{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.pc, .cit{
+    display: flex;
+    flex-direction: column;
+}
+
+.cit{
+    margin-left: 6px;
+}
+
+#city{
+    height: 30px;
+    width: 15vw;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+#city:focus{
+    outline: none;
+}
+
+#postalcode{
+    height: 30px;
+    width: 15vw;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+#postalcode:focus{
+    outline: none;
+}
+
+#country{
+    height: 30px;
+    width: 30vw;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+#country:focus{
+    outline: none;
+}
+
+.tel-news{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.tel{
+    display: flex;
+    flex-direction: column;
+}
+
+#phone{
+    height: 30px;
+    width: 20vw;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+#phone:focus{
+    outline: none;
+}
+
+#check-news-label{
+    color : #f3f3f3;
+    font-family: "Marko One", sans-serif;
+    font-size: 16px;
+}
+
+.news-letter{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.reg{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top:10px;
+}
+
+.reg button{
+    background-color:#e39D22;
+    border: 1px solid #e39D22;
+    border-radius: 15px;
+    width: 50%;
+    height: 4vh;
+    color: #f3f3f3;
+}
