@@ -1,6 +1,6 @@
 import * as React from "react";
-import CarouselHome  from "../components/carousel/CarouselHome";
-import CarouselPromo  from "../components/carousel/CarouselPromo"
+import CarouselHome from "../components/carousel/CarouselHome";
+import CarouselPromo from "../components/carousel/CarouselPromo"
 import CarouselForYou from "../components/carousel/CarouselForYou"
 
 
@@ -9,7 +9,11 @@ class Home extends React.Component {
     return (
       <div className="Home">
         <CarouselHome />
-        <CarouselPromo />
+
+        <div>
+          <CarouselPromo display={5} />
+        </div>
+
         <CarouselForYou />
       </div>
     );
