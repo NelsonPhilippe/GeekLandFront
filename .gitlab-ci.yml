@@ -9,6 +9,8 @@ cache:
 build:
   image: node:latest
   stage: build
+  only:
+    - main
   script:
     - npm install
     - npm run build
