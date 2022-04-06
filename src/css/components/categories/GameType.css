@@ -30,16 +30,17 @@
     justify-content:center;
     align-items:center;
     flex-direction: column;
+    
 }
 
 .game-type h1{
     font-style: bold;
     font-family:"Marko One", sans serif;
-    color: rgb(23, 32, 42);
+    width:100%;
+    color: #ffffff;
     text-align:center;   
-    font-size:50px;
+    font-size:40px;
     position:absolute;
-    
     
 }
 
@@ -49,8 +50,9 @@
     background-image: url('../../../../public/img/manette-bg-1.png');
     background-size:cover;    
     background-repeat: no-repeat;
-    background-color: #cacaca ;
-    opacity: 0.7;
+    background-color: #000000 ;
+    opacity: 0.8;
+    border:1px solid rgb(46, 134, 193);
 }
 
 .game-type-bg-2{
@@ -59,8 +61,9 @@
     background-image: url('../../../../public/img/manette-bg-2.png');
     background-size:cover;    
     background-repeat: no-repeat;
-    background-color: #cacaca ;
-    opacity: 0.7;
+    background-color: #000000 ;
+    opacity: 0.8;
+    border:1px solid rgb(46, 134, 193);
 }
 
 .game-type-bg-3{
@@ -69,6 +72,7 @@
     background-image: url('../../../../public/img/echec-bg-3.png');
     background-size:cover;
     background-repeat: no-repeat;
-    background-color: #cacaca ;
-    opacity: 0.7;
+    background-color: #000000 ;
+    opacity: 0.8;
+    border:1px solid rgb(46, 134, 193);
 }
