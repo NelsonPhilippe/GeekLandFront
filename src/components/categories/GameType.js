@@ -7,7 +7,7 @@ export default class GameType extends React.Component {
         return (
             <div className="game-type-container">
                 <div className="game-type-mini-cont">
-                    <Link className="game-type" to="/">
+                    <Link className="game-type" to="/action">
                         <div className="game-type-bg-1"></div>
                         <h1>Action</h1>
                     </Link>

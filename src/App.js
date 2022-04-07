@@ -18,6 +18,7 @@ import BackUpCode from './views/BackUpCode';
 import ResetPassword from './views/ResetPassword';
 import Categories from './views/Categories';
 import VideoGames from './components/categories/ProductType/VideoGames.js';
+import Action from './components/categories/GameType/Action';
 
 // import Search from "./views/Search";
 
@@ -40,6 +41,7 @@ class App extends React.Component {
           <Route path="/ResetPassword" element={<ResetPassword />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/videogames" element={<VideoGames />} />
+          <Route path="/action" element={<Action />} />
         </Routes>
 
         <Footer />
