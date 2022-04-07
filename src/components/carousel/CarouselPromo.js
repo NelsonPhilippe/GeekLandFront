@@ -22,7 +22,7 @@ export default class CarouselPromo extends React.Component {
 		this.resizeContainer()
 		let carousel__btn = document.getElementById('carousel__btn_left')
 
-		if (this.state.index == 1) {
+		if (this.state.index === 1) {
 			carousel__btn.style.visibility = 'hidden';
 		} else {
 			carousel__btn.style.display = 'visible';
@@ -39,7 +39,7 @@ export default class CarouselPromo extends React.Component {
 		this.resizeContainer()
 		let carousel__btn = document.getElementById('carousel__btn_left')
 
-		if (this.state.index == 1) {
+		if (this.state.index === 1) {
 			carousel__btn.style.visibility = 'hidden';
 		} else {
 			carousel__btn.style.display = 'visible';
@@ -121,7 +121,7 @@ export default class CarouselPromo extends React.Component {
 		carousel__btn_left.style.visibility = 'visible';
 
 
-		if (newIndex == 1) {
+		if (newIndex === 1) {
 
 			carousel__btn_left.style.visibility = 'hidden';
 			carousel__btn_right.style.visibility = 'visible';
