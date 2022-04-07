@@ -1,4 +1,9 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&display=swap');
+
+*{
+  box-sizing:border-box;
+}
+
 body {
   /* overflow-x: hidden; */
   margin: 0;
@@ -6,11 +11,24 @@ body {
   height: auto;
 }
 
+#root{
+  flex-grow: 1;
+  display: flex;
+  width: 100vw;
+}
+
 .App {
-  height: auto;
+  height: 100%;
+  width: 100vw;
+
 }
 
 .Home {
-  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3faff;
   height: 100%;
+  width: 100vw;
+
 }
