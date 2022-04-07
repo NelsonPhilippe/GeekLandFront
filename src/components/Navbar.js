@@ -9,41 +9,42 @@ class Navbar extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            visibility: 'none'
+            visibility: false
         }
+
+        this.profile = this.profile.bind(this)
     }
 
 
-    hoverProfile() {
-        
+    profile(e) {
+
         let visibility = this.state.visibility
-        let element = document.querySelector('.menu-profile')
+        // let element = document.querySelector('.menu-profile')
 
-        if(visibility === 'none'){
-            this.setState({visibility: 'show'})
-            element.classList.add('show')
-            element.classList.remove('none')
+        
+
+        if (visibility) {
             
+            return this.setState({
+                visibility: false
+            })
         }
-
-        if(visibility === 'show'){
-            this.setState({visibility: 'none'})
-            element.classList.add('none')
-            element.classList.remove('show')
-        }
+        this.setState({
+            visibility: true
+        })
 
     }
 
-    render(){
+    render() {
         return (
             <div className='Nav'>
                 <Link id='logo' to='/'><img src="/img/logo.png" alt="logo" /></Link>
                 <SearchBar />
                 <img id="menu" src='/img/Menu.png' alt='menu_btn' />
                 <img id="profile" src='/img/profile.png' alt='profile_btn'
-                onClick={() => this.hoverProfile()}
+                    onClick={this.profile} 
                 />
-                <Profile />
+                {this.state.visibility ? <Profile /> : null}
             </div>
         );
     }
