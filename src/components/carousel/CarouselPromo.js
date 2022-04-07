@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 import './../../css/components/carousel/CarouselHomeArticle.css'
 import Article from './Article'
 import axios from 'axios';
