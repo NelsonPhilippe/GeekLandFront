@@ -2,6 +2,7 @@ import * as React from "react";
 import CarouselHome from "../components/carousel/CarouselHome";
 import CarouselPromo from "../components/carousel/CarouselPromo"
 import CarouselForYou from "../components/carousel/CarouselForYou"
+import Footer from "../components/Footer";
 
 
 class Home extends React.Component {
@@ -10,11 +11,11 @@ class Home extends React.Component {
       <div className="Home">
         <CarouselHome />
 
-        <div>
-          <CarouselPromo display={5} />
-        </div>
+        <CarouselPromo title="Promotion" display={10} />
 
-        <CarouselForYou />
+
+        <CarouselForYou title="Pour vous" display={10} />
+        <Footer />
       </div>
     );
   }

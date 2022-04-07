@@ -1,11 +1,33 @@
-*{
-    height: 100vh;
-}
+
 
 .carousel{
     position: relative;
     width: 100%;
     height: 30vh;
+    background-color: #17202A;
+    margin-top: 10%;
+
+}
+
+.title-carousel{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    top: -20%;
+    width: 10%;
+    margin: 0;
+    background-color: #E39D22;
+    border-radius: 0 15px 0 0;
+
+    
+}
+
+.title-carousel h2{
+    color: #FFFFFF;
+    font-size: 130%;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .carousel ul{
@@ -26,10 +48,11 @@
     width: 100%;
 }
 
-.carousel__container{
+.carousel__container, .carousel__container_for{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .carousel__conatiner_btn{
@@ -43,7 +66,7 @@
 
 }
 
-.carousel__btn{
+.carousel__btn, .carousel__btn_for{
     position: relative;
     width: 3%;
     height: 100%;
@@ -51,11 +74,11 @@
     border-radius: 50% 0 0 50%;
 }
 
-.carousel__btn:hover{
+.carousel__btn:hover, .carousel__btn_for:hover{
     cursor: pointer;
 }
 
-.carousel__btn::after{
+.carousel__btn::after, .carousel__btn_for::after{
     position: absolute;
     content: '';
     padding: 20%;
@@ -88,21 +111,20 @@
 .article__item_title{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 30%;    
     background-color: #E39D22;
-    padding: 0;
-    margin: 0;
+
     color: #FFFFFF;
-    font-family: 'Marko One', serif;
     margin-top: 15px;
 }
 
-.article__item h3{
-    width: 100%;
-    height: 30%;
+.article__item h5{
     margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'Marko One', serif;
     text-align: center;
-    
 }
 
 

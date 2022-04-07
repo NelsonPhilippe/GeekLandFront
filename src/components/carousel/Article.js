@@ -14,7 +14,7 @@ export default class Article extends React.Component {
             <li className="article__item">
                 <img src={this.props.url} alt="" />
                 <div className="article__item_title">
-                    <h3>Nom de l'article</h3>
+                    <h5>Nom de l'article</h5>
                 </div>
             </li>
         )

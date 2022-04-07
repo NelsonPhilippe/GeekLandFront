@@ -9,9 +9,6 @@ import ProfileSetting from "./components/settings/ProfileSetting";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import Settings from "./views/settings/Settings";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import CarouselPromo from "./components/carousel/CarouselPromo";
 // import Search from "./views/Search";
 
 class App extends React.Component {
@@ -27,7 +24,6 @@ class App extends React.Component {
           <Route path="/FAQ" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/settings" element={<Settings />} />
-          <Route path="/carousel" element={<CarouselPromo display={5} />} />
         </Routes>
 
         {/* <Footer /> */}

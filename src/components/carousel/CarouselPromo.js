@@ -34,7 +34,7 @@ export default class CarouselPromo extends React.Component {
 	}
 
 
-	componentDidUpdate(){
+	componentDidUpdate() {
 		this.resizeItems()
 		this.resizeContainer()
 		let carousel__btn = document.getElementById('carousel__btn_left')
@@ -90,7 +90,6 @@ export default class CarouselPromo extends React.Component {
 
 
 		if ((newIndex + this.props.display) >= childs.length) {
-			console.log('test');
 
 			carousel__btn_right.style.visibility = 'hidden';
 		} else {
@@ -103,7 +102,6 @@ export default class CarouselPromo extends React.Component {
 			index: newIndex
 		})
 
-		console.log(newIndex);
 	}
 
 
@@ -137,7 +135,6 @@ export default class CarouselPromo extends React.Component {
 		}
 
 		let scale = newIndex * -100 / childs.length
-		// console.log(newIndex);
 
 
 		carousel__container.style.transform = `translate3d(${scale}%, 0, 0)`;
@@ -157,15 +154,15 @@ export default class CarouselPromo extends React.Component {
 
 
 			response.data.forEach((data) => {
-				items.push(<Article url={data.download_url} />)
+				items.push(<Article key={data.id} url={data.download_url} />)
 			})
 
 
 			this.setState({
-			    items: items
+				items: items
 			})
 		})
-		
+
 
 	}
 
@@ -173,6 +170,9 @@ export default class CarouselPromo extends React.Component {
 	render() {
 		return (
 			<div className='carousel'>
+				<div className='title-carousel'>
+					<h2>{this.props.title}</h2>
+				</div>
 				<ul className='carousel__container'>
 
 					{this.state.items}
