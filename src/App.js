@@ -10,8 +10,7 @@ import ProfileSetting from "./components/settings/ProfileSetting";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import Settings from "./views/settings/Settings";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+
 
 import Register from './views/Register';
 import ForgottenPassword from './views/ForgottenPassword';
@@ -19,13 +18,10 @@ import BackUpCode from './views/BackUpCode';
 import ResetPassword from './views/ResetPassword';
 import Categories from './views/Categories';
 
-// import Search from "./views/Search";
-
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Navbar />
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -44,7 +40,6 @@ class App extends React.Component {
 
         </Routes>
 
-        <Footer />
       </div>
     );
   }
