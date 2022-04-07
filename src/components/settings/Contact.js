@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./../css/components/Contact.css";
+import "../../css/components/settings/Contact.css";
 import { Link } from "react-router-dom";
 
 export default class Contact extends React.Component {

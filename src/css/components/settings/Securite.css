@@ -25,7 +25,7 @@
 }
 
 .securite-general h2 {
-  color: white;
+  color: #F3FAFF;
   margin-left: 20px;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .double-identification p {
-  color: white;
+  color: #F3FAFF;
   width: 15%;
   padding-left: 40px;
 }
@@ -60,14 +60,14 @@
   width: 70%;
   height: auto;
   background-color: #c25450;
-  color: white;
+  color: #F3FAFF;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .A2F:hover {
-  background-color: white;
+  background-color: #F3FAFF;
   color: #c25450;
   border: 1px solid #c25450;
 }
@@ -89,7 +89,7 @@
 }
 
 .last-connexion p {
-  color: white;
+  color: #F3FAFF;
 }
 
 .supression {
@@ -99,7 +99,7 @@
   margin: 0 auto;
   margin-top: 30px;
   background-color: #c25450;
-  color: white;
+  color: #F3FAFF;
   border: none;
   border-radius: 5px;
   cursor: pointer;

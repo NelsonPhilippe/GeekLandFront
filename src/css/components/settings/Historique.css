@@ -1,4 +1,4 @@
-.historqiue-container {
+.historique-container {
   width: 90%;
   height: auto;
   margin: 0 auto;
@@ -6,4 +6,9 @@
   border-radius: 10px;
   padding-top: 30px;
   padding-bottom: 40px;
+}
+
+.historique-container h1{
+  color: #17202a;
+  margin-left: 60px;
 }

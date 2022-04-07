@@ -54,6 +54,7 @@
 .sujet input {
   width: 100%;
   height: 40px;
+  background-color: #F3FAFF;
   margin-top: 10px;
   border-radius: 10px;
   border: none;
@@ -63,6 +64,7 @@
 .requete textarea {
   width: 100%;
   height: 400px;
+  background-color: #F3FAFF;
   margin-top: 10px;
   padding-top: 15px;
   border-radius: 10px;
@@ -86,7 +88,7 @@
 }
 
 #btn-requete:hover {
-  background-color: white;
+  background-color: #F3FAFF;
   color: #e39d22;
   border: 1px solid #e39d22;
 }

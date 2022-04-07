@@ -1,27 +1,23 @@
 .paiement-container {
-  position: relative;
   width: 90%;
-  height: 1500px;
+  height: auto;
   margin: 0 auto;
   background: rgb(227, 157, 34, 0.5);
   border-radius: 10px;
-  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .paiement-container h1 {
-  position: absolute;
-  top: 4%;
-  left: 8%;
   color: #17202a;
+  margin-left: 60px;
 }
 
 .paiement-general {
-  position: absolute;
-  top: 200px;
-  left: 50%;
-  transform: translate(-50%);
   width: 80%;
   height: auto;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 .container-card {
@@ -38,14 +34,10 @@
   margin-left: 40px;
   margin-top: 40px;
   margin-bottom: 60px;
-  color: white;
+  color: #F3FAFF;
 }
 
 .card {
-  /* position: absolute; */
-  /* top: 20%; */
-  /* left: 50%;
-  transform: translate(-50%); */
   margin: 0 auto;
   background-color: #f3faff;
   border-radius: 10px;
@@ -56,7 +48,6 @@
 
 .number-card {
   width: 60%;
-  /* background-color: red; */
   height: 60px;
   display: flex;
   flex-direction: row;
@@ -68,7 +59,6 @@
 .expiration {
   width: 52%;
   height: 50px;
-  /* background-color: red; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -88,7 +78,7 @@
   background-color: #c25450;
   border-radius: 10px;
   border: none;
-  color: white;
+  color: #F3FAFF;
   display: block;
   margin: 0 auto;
   margin-top: 50px;
@@ -96,7 +86,7 @@
 }
 
 .sup-card:hover {
-  background-color: white;
+  background-color: #F3FAFF;
   color: #c25450;
   border: 1px solid #c25450;
 }
@@ -114,7 +104,7 @@
   margin-left: 40px;
   margin-top: 40px;
   margin-bottom: 60px;
-  color: white;
+  color: #F3FAFF;
 }
 
 #add-card {
@@ -179,7 +169,7 @@
   background-color: #00c78a;
   border-radius: 10px;
   border: none;
-  color: white;
+  color: #F3FAFF;
   font-weight: bold;
   display: block;
   margin: 0 auto;
@@ -189,7 +179,7 @@
 }
 
 #btn-add-card:hover {
-  background-color: white;
+  background-color: #F3FAFF;
   color: #00c78a;
   border: 1px solid #00c78a;
 }
