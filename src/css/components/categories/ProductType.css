@@ -1,45 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Marko+One&family=Revalia&display=swap');
 
-.product-type-container{
-    margin:10%;
-    width:80vw;
-    height:100vh;
-    background-color:rgba(23, 32, 42,0.95);
-    border-radius:15px;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction: column;
-}
-
-.product-type{
-    margin:2%; 
-    padding:5px;
-    height:30vh;
-    width:70vw;
-    border-radius:5px;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction: column; 
-}
-
-.product-type h1{
-    font-style: bold;
-    font-family:"Marko One", sans serif;
-    color: rgb(23, 32, 42);
-    text-align:center;   
-    font-size:50px;
+.categories {
     position: absolute;
-    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(23, 32, 42, 0.4);
+    /* visibility: hidden; */
 }
 
-.product-type-bg{
-    height:100%;
-    width:100%;
-    background-image: url(../../../../public/img/bgicategories.png);
-    background-size:cover;    
-    background-repeat: no-repeat;
-    filter:blur(5px);
-    position: relative;
+.product-type-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(23, 32, 42, 0.95);
+    border-radius: 15px;
+    margin: auto;
+    transform: translateY(10%);
+
+}
+
+.product-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 0 3% 0;
+    height: 10vh;
+    width: 70%;
+    border-radius: 5px;
+    background: no-repeat center url(../../../../public/img/bgicategories.png);
+    background-size: cover;
+
+}
+
+.product-type h1 {
+    font-style: bold;
+    font-family: "Marko One", sans serif;
+    color: #17202a;
+    text-align: center;
+    font-size: 300%;
+    z-index: 2;
+    margin: 0;
+    width: 100%;
+
+
+}
+
+.product-type-bg {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.3);
+    cursor: pointer;
+    text-decoration: none;
+
 }

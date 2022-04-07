@@ -2,44 +2,50 @@
 
 .menu-profile{
     position: absolute;
+    height: 10vh;
+    right: 0;
+    top: 7vh;
+    width: 15vw;
+    z-index: 10;
+    font-family: 'Revalia', cursive;
+    font-size: 80%;
+}
+
+.nav-profile{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    right: 0;
-    top: 7.1vh;
     background-color: #17202A;
-    width: 15vw;
+    width: 100%;
+    height: 99%;
+    margin-top: 1px;
     border-radius: 15px 0 0 15px;
-    z-index: 10;
-    font-family: 'Revalia', cursive;
-    font-size: 80%;
+    z-index: 1;
+
 
 }
 
-.menu-profile div{
-    background-color: #2E86C1;
-    width:70%;
-    height: 1px;
-}
-
-
-.menu-profile h4{
+.menu-profile a{
     color: white;
     cursor: pointer;
     transition: all 0.4s ease;
+    z-index: 1;
+    text-decoration: none;
+
 
 }
 
-.menu-profile h4:hover{
+.menu-profile a:hover{
     color: #c88d23;
+
 }
 
+#profile-nav-separator{
+    position: absolute;
+    background-color: #2E86C1;
+    width:70%;
+    height: 1px;
 
-.show{
-    visibility: visible;
-}
-
-.none{
-    visibility: hidden;
 }
