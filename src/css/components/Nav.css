@@ -26,8 +26,18 @@
   margin-right: 1em;
 }
 
+<<<<<<< refs/remotes/origin/profile-info
 #menu {
   height: 70%;
+=======
+#menu{
+    height: 70%;
+    z-index: 11;
+}
+
+#menu:hover{
+    cursor: pointer;
+>>>>>>> add cat & add link to cat
 }
 
 #profile{
