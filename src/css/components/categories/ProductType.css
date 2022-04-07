@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Marko+One&family=Revalia&display=swap');
 
 .categories {
+    position: absolute;
     height: 100vh;
     width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(23, 32, 42, 0.4);
+    /* visibility: hidden; */
 }
 
 .product-type-container {
@@ -29,6 +35,7 @@
     border-radius: 5px;
     background: no-repeat center url(../../../../public/img/bgicategories.png);
     background-size: cover;
+
 }
 
 .product-type h1 {
@@ -40,6 +47,8 @@
     z-index: 2;
     margin: 0;
     width: 100%;
+
+
 }
 
 .product-type-bg {
@@ -48,4 +57,7 @@
     height: 100%;
     width: 100%;
     background-color: rgb(255, 255, 255, 0.3);
+    cursor: pointer;
+    text-decoration: none;
+
 }
