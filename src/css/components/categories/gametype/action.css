@@ -11,7 +11,44 @@
 }
 
 #head1,#head2{
-    width:200px;
+    width:20%;
+    height:10vh;
+    background-color:#E39D22;
+    font-family: "Marko One", sans-serif;
+    border:none;
+    border-radius:10px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+
+#filter-action{
+    width:20%;
+    height:5vh;
+    font-family: "Marko One", sans-serif;
+    background-color:#E39D22;
+    border:none;
+    border-radius:10px;
+    margin-bottom: 5px;
+    position:relative;
+    bottom: -5vh;
+}
+
+#head1:hover{
+    background-color:#2E86C1;
+}
+
+#head2:hover{
+    background-color:#2E86C1;
+}
+
+#head1:focus{
+    background-color:#2E86C1;
+}
+
+#head2:focus{
+    background-color:#2E86C1;
+    outline: none;
 }
 
 .action-container{
@@ -48,10 +85,8 @@
 }
 
 .action-game-img{
-    height:200px;
-    /* background-image: url(../../../../../public/img/product/Tanjiro\ Hinokami.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; */
+    height:100%;
+    
 }
 
 .action-game-name{
