@@ -31,8 +31,11 @@ export default class Fieldlogin extends React.Component {
 			
 			let token = res.data
 
-			localStorage.setItem('user_token', token)
+			if(token){
+				window.location = '/'
+			}
 
+			
 		}).catch((err) => {
 			console.error(err)
 		});
