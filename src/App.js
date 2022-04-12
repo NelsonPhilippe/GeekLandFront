@@ -16,6 +16,9 @@ import ForgottenPassword from './views/ForgottenPassword';
 import BackUpCode from './views/BackUpCode';
 import ResetPassword from './views/ResetPassword';
 import Categories from './views/Categories';
+import Historique from "./components/settings/Historique";
+import Paiement from './components/settings/Paiement'
+import Securite from './components/settings/Securite'
 
 class App extends React.Component {
   render() {
@@ -29,7 +32,7 @@ class App extends React.Component {
           <Route path="/profilesetting" element={<ProfileSetting />} />
           <Route path="/FAQ" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/settings" element={<Settings />} />
+          {/* <Route path="/settings" element={<Settings />} /> */}
 
           <Route path="/register" element={<Register />} />
           <Route path="/ForgottenPassword" element={<ForgottenPassword />} />
@@ -37,6 +40,14 @@ class App extends React.Component {
           <Route path="ResetPassword" element={<ResetPassword />} />
           <Route path="categories" element={<Categories />} />
 
+          <Route path="/settings" element={<Settings />}>
+            <Route path="profilesetting" element={<ProfileSetting />}></Route>
+            <Route path="paiement" element={<Paiement />}></Route>
+            <Route path="securite" element={<Securite />}></Route>
+            <Route path="historique" element={<Historique />}></Route>
+            <Route path="contact" element={<Contact />}></Route>
+            <Route path="faq" element={<FAQ />}></Route>
+          </Route>
         </Routes>
 
       </div>
