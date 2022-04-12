@@ -24,7 +24,7 @@ class App extends React.Component {
       <div className="App">
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home/>} />
           <Route path="/login" element={<Login />} />
 
           <Route path="/profilesetting" element={<ProfileSetting />} />

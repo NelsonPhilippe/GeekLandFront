@@ -14,6 +14,12 @@ export default class Fieldlogin extends React.Component {
 		this.handleChange = this.handleChange.bind(this)
 	}
 
+	componentDidMount(){
+		if(localStorage.getItem('user_token') != null){
+			window.location = '/'
+		}
+	}
+
 	handleSubmit(e) {
 		e.preventDefault()
 
@@ -39,13 +45,6 @@ export default class Fieldlogin extends React.Component {
 		}).catch((err) => {
 			console.error(err)
 		});
-
-		// let response = await axios.post('http://localhost:8000/api/auth/login', {
-		// 	email: username,
-		// 	password: password
-		// })
-
-		// console.log(response);
 	}
 
 	handleChange(e) {

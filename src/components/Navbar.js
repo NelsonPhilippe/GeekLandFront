@@ -2,7 +2,9 @@ import * as React from "react";
 import './../css/components/Nav.css'
 import { Link } from "react-router-dom";
 import SearchBar from './SearchBar'
-import Profile from './ProfileMenuNC'
+import ProfileNC from './ProfileMenuNC'
+import Profile from './ProfileMenu'
+
 import ProductType from "./categories/ProdcutType";
 
 class Navbar extends React.Component {
@@ -16,6 +18,9 @@ class Navbar extends React.Component {
 
         this.profile = this.profile.bind(this)
         this.categorie = this.categorie.bind(this)
+        this.profileRender = this.profileRender.bind(this)
+
+        console.log(this.profileRender());
 
     }
 
@@ -62,6 +67,16 @@ class Navbar extends React.Component {
 
     }
 
+    profileRender(){
+        console.log(this.props.isLogin);
+        
+        if(localStorage.getItem('user_token') != null){
+            return <Profile />
+        }
+
+        return <ProfileNC />
+    }
+
 
     render() {
         return (
@@ -72,7 +87,7 @@ class Navbar extends React.Component {
                 <img id="profile" src='/img/profile.png' alt='profile_btn'
                     onClick={this.profile} 
                 />
-                {this.state.visibility_profile ? <Profile /> : null}
+                {this.state.visibility_profile ? this.profileRender() : null}
                 {this.state.visibility_cat ? <ProductType /> : null}
 
             </div>

@@ -43,7 +43,7 @@
   text-align: center;
 }
 
-.linkfooter a {
+.linkfooter button {
   font-size: 1em;
   font-family: "Marko One", serif;
   font-weight: normal;
@@ -52,9 +52,12 @@
   margin-right: 30px;
   transition: all 0.7s ease;
   cursor: pointer;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
 }
 
-.linkfooter a:hover {
+.linkfooter button:hover {
   color: #c88d23;
 }
 
@@ -104,7 +107,7 @@
     right: 0;
   }
 
-  .linkfooter a {
+  .linkfooter button {
     margin: 0;
     margin-bottom: 30px;
   }
