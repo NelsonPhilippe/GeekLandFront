@@ -32,27 +32,27 @@ export default class Register extends React.Component {
         const username = this.state.username
         const password = this.state.password
         const mail = this.state.mail
-        // const name = this.state.name
-        // const lastname = this.state.lastname
-        // const postal_address = this.state.postal_address
-        // const postal_code = this.state.postal_code
-        // const city = this.state.city
-        // const country = this.state.country
-        // const phone = this.state.phone
+        const name = this.state.name
+        const lastname = this.state.lastname
+        const postal_address = this.state.postal_address
+        const postal_code = this.state.postal_code
+        const city = this.state.city
+        const country = this.state.country
+        const phone = this.state.phone
 
         axios.post('http://localhost:8000/api/auth/register', {
             username: username,
             password: password,
-            mail: mail,
-            // name: name,
+            email: mail,
+            name: name,
             newsletter: this.state.newsletters,
-            url_image_profile: 'default'
-            // lastname: lastname,
-            // postal_address: postal_address,
-            // postal_code: postal_code,
-            // city: city,
-            // country: country,
-            // phone: phone
+            url_image_profile: 'default',
+            lastname: lastname,
+            postal_address: postal_address,
+            postal_code: postal_code,
+            city: city,
+            country: country,
+            phone: phone
         },{ headers: {
             "Content-Type" : "application/json", 
 			"Accept": "*/*"
