@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
 
-.menu-profile{
+.menu-profile-nc {
     position: absolute;
     height: 10vh;
     right: 0;
@@ -9,6 +9,18 @@
     z-index: 10;
     font-family: 'Revalia', cursive;
     font-size: 80%;
+}
+
+.menu-profile {
+    position: absolute;
+    height: 30vh;
+    right: 0;
+    top: 7vh;
+    width: 15vw;
+    z-index: 10;
+    font-family: 'Revalia', cursive;
+    font-size: 80%;
+    z-index: 11;
 }
 
 .nav-profile{
@@ -27,7 +39,7 @@
 
 }
 
-.menu-profile a{
+.menu-profile-nc a, .menu-profile a{
     color: white;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -37,13 +49,15 @@
 
 }
 
-.menu-profile a:hover{
+
+
+.menu-profile-nc a:hover, .menu-profile a:hover{
     color: #c88d23;
 
 }
 
 #profile-nav-separator{
-    position: absolute;
+    /* position: absolute; */
     background-color: #2E86C1;
     width:70%;
     height: 1px;
