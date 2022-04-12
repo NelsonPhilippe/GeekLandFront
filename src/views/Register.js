@@ -81,6 +81,8 @@ export default class Register extends React.Component {
         let value = e.target.value
 
         switch (name) {
+            default:
+                break;
             case 'login':
                 this.setState({
                     username: value
@@ -139,8 +141,7 @@ export default class Register extends React.Component {
                 this.setState({
                     newsletters: !this.state.newsletters
                 })
-            default:
-                break;
+            
         }
 
 
