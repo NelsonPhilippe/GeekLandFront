@@ -1,0 +1,53 @@
+.card {
+  margin: 0 auto;
+  background-color: #f3faff;
+  border-radius: 10px;
+  width: 60%;
+  height: 220px;
+  margin-bottom: 80px;
+}
+
+.number-card {
+  width: 60%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+
+.expiration {
+  width: 52%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+
+.line-div {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.sup-card {
+  width: 30%;
+  height: 35px;
+  background-color: #c25450;
+  border-radius: 10px;
+  border: none;
+  color: #f3faff;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.sup-card:hover {
+  background-color: #f3faff;
+  color: #c25450;
+  border: 1px solid #c25450;
+}

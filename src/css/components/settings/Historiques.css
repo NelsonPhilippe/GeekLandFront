@@ -1,0 +1,68 @@
+.block-commande {
+  width: 80%;
+  height: 100px;
+  margin: 0 auto;
+  background: #f3faff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.block-commande p {
+  margin: 0;
+}
+
+.dropdown {
+  width: 20%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+#date-commande {
+  width: 18%;
+  height: 50px;
+  line-height: 50px;
+  border-right: 1px solid black;
+  text-align: center;
+}
+
+#num-commande {
+  width: 22%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-right: 1px solid black;
+}
+
+#price-commande {
+  width: 18%;
+  height: 50px;
+  line-height: 50px;
+  border-right: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+  color: #2e86c1;
+}
+
+#livraison {
+  width: 20%;
+  height: 50px;
+  line-height: 50px;
+  border-right: 1px solid black;
+  text-align: center;
+}
+
+#detail {
+  display: none;
+  width: 80%;
+  height: 200px;
+  background: #f3faff;
+  margin: 0 auto;
+  border-radius: 0 0 10px 10px;
+}
