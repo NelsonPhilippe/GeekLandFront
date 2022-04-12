@@ -30,7 +30,7 @@ class App extends React.Component {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home/>} />
           <Route path="/login" element={<Login />} />
 <<<<<<< refs/remotes/origin/profile-info
           <Route path="/settings" element={<Settings />}>

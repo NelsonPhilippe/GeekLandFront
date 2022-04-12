@@ -8,9 +8,9 @@ export default class ProfileMenuNC extends React.Component {
 
     render() {
         return (
-            <div className="menu-profile" id='profile-menu'>
+            <div className="menu-profile" id='profile-menu-nc'>
                 <div className='nav-profile'>
-                    <Link className='link-nav' to='/subscribe'><h4>Inscription</h4></Link>
+                    <Link className='link-nav' to='/register'><h4>Inscription</h4></Link>
                     <div id='profile-nav-separator'></div>
                     <Link className='link-nav' to='/login'><h4>Connexion</h4></Link>
                 </div>

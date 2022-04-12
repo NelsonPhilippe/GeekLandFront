@@ -1,5 +1,6 @@
 import axios from 'axios';
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import "../css/Register.css"
 export default class Register extends React.Component {
 
@@ -17,10 +18,12 @@ export default class Register extends React.Component {
             city: '',
             country: '',
             phone: '',
-            newsletters: false
+            newsletters: false,
+            isLogin: true
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
+
     }
 
     handleSubmit(e) {
@@ -36,8 +39,6 @@ export default class Register extends React.Component {
         const city = this.state.city
         const country = this.state.country
         const phone = this.state.phone
-
-        console.log(mail);
 
         axios.post('http://localhost:8000/api/auth/register', {
             username: username,
@@ -59,8 +60,15 @@ export default class Register extends React.Component {
 
             let data = res.data
 
-            console.log(res);
+            if(data.response === 'user exist'){
+                alert('L\'utilisateur est déja existant')
+                window.location = '/'
+                return
+            }
 
+
+            localStorage.setItem('user_token', data.token)
+            window.location = '/'
         })
 
 
@@ -208,7 +216,7 @@ export default class Register extends React.Component {
                         </div>
 
                         <div className="reg">
-                            <button id="reg">Créer un compte</button>
+                            <Link id="reg" to='/' params={{ isLogin: this.state.isLogin }}>Créer un compte</Link>
                         </div>
                     </form>
                 </div>
