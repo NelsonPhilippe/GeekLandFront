@@ -8,6 +8,8 @@ import Cgu from './../components/Cgu'
 
 class Home extends React.Component {
 
+class Home extends React.Component {
+
   constructor(props) {
     super(props)
     this.state = {
@@ -59,6 +61,7 @@ class Home extends React.Component {
         {this.state.display_cgu ? <Cgu displayCgu={this.displayCgu} /> : null}
 
         <Navbar />
+
         <CarouselHome />
 
         <CarouselPromo title="Promotion" display={this.state.carousel_displayed} />
