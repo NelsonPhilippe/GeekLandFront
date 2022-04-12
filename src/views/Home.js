@@ -23,7 +23,6 @@ class Home extends React.Component {
 
   componentDidMount() {
     this.updateCarousel()
-    // console.log(this.props.isLogin);
 
     window.addEventListener('resize', this.updateCarousel)
   }

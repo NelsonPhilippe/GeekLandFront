@@ -19,9 +19,6 @@ class Navbar extends React.Component {
         this.profile = this.profile.bind(this)
         this.categorie = this.categorie.bind(this)
         this.profileRender = this.profileRender.bind(this)
-
-        console.log(this.profileRender());
-
     }
 
 

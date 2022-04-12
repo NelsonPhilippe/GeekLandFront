@@ -8,7 +8,7 @@ export default class ProfileMenuNC extends React.Component {
 
     render() {
         return (
-            <div className="menu-profile" id='profile-menu-nc'>
+            <div className="menu-profile-nc" id='profile-menu'>
                 <div className='nav-profile'>
                     <Link className='link-nav' to='/register'><h4>Inscription</h4></Link>
                     <div id='profile-nav-separator'></div>

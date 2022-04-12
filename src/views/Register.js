@@ -1,6 +1,5 @@
 import axios from 'axios';
 import * as React from 'react';
-import { Link } from 'react-router-dom';
 import "../css/Register.css"
 export default class Register extends React.Component {
 
@@ -47,8 +46,8 @@ export default class Register extends React.Component {
             name: name,
             newsletter: this.state.newsletters,
             url_image_profile: 'default',
-            lastname: lastname,
-            postal_address: postal_address,
+            last_name: lastname,
+            postal_adress: postal_address,
             postal_code: postal_code,
             city: city,
             country: country,
@@ -204,7 +203,7 @@ export default class Register extends React.Component {
                             <input type="text" id="country" name="country" placeholder="Country" onChange={this.handleChange} />
                         </div>
 
-                        <div class="tel-news">
+                        <div className="tel-news">
                             <div className="tel">
                                 <label for="phone">Téléphone: </label>
                                 <input type="tel" id="phone" name="phone" placeholder="Phone Number" onChange={this.handleChange} />
@@ -217,7 +216,7 @@ export default class Register extends React.Component {
                         </div>
 
                         <div className="reg">
-                            <Link id="reg" to='/' params={{ isLogin: this.state.isLogin }}>Créer un compte</Link>
+                            <button onClick={this.handleSubmit} className='reg'>Créer un compte</button>
                         </div>
                     </form>
                 </div>
