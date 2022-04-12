@@ -111,7 +111,6 @@ export default class Fieldlogin extends React.Component {
 			</div>
 		);
 	}
-=======
     render() {
         return (
             <div className="connexion">
@@ -145,5 +144,4 @@ export default class Fieldlogin extends React.Component {
             </div>
         )
     }
->>>>>>> add register + del component fieldlogin + navbar
 }

@@ -8,9 +8,7 @@ import Login from "./views/Login";
 import Settings from "./views/Settings";
 import Contact from "./components/settings/Contact";
 import ProfileSetting from "./components/settings/ProfileSetting";
-import FAQ from "./components/FAQ";
-import Contact from "./components/Contact";
-import Settings from "./views/settings/Settings";
+import FAQ from "./components/settings/FAQ";
 
 
 import Register from './views/Register';
