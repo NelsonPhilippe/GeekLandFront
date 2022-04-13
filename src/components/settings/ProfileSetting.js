@@ -1,8 +1,49 @@
 import * as React from "react";
 import "../../css/components/settings/ProfileSettings.css";
 import { IoIosArrowForward } from "react-icons/io";
+import axios from "axios";
 
 export default class ProfileSettings extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      name: '',
+      lastname: '',
+      birthday: '00 Janvier 0000',
+      mail: '',
+      phone: ''
+    }
+  }
+
+  componentDidMount() {
+    this.getUserData()
+  }
+
+  getUserData() {
+
+    let token = localStorage.getItem('user_token')
+
+    axios.get('http://localhost:8000/api/settings/profile', {
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        "Content-Type": "application/json",
+        "Accept": "*/*",
+        'Access-Control-Allow-Origin': '*'
+
+      }
+    }).then((res) => {
+
+      let data = res.data
+      this.setState({
+        name: data.name,
+        lastname: data.last_name,
+        mail: data.email,
+        phone: data.phone
+      })
+    })
+  }
+
   hello() {
     console.log("Hey !");
   }
@@ -31,7 +72,7 @@ export default class ProfileSettings extends React.Component {
             <div className="block-info">
               <p id="titleInformation">Nom</p>
               <div id="click" onClick={this.hello}>
-                <p>Name Lastname</p>
+                <p>{`${this.state.lastname} ${this.state.name}`}</p>
                 <div className="icon">
                   <IoIosArrowForward size={30} />
                 </div>
@@ -59,7 +100,7 @@ export default class ProfileSettings extends React.Component {
             <div className="block-cord">
               <p id="titleCord">Adresse email</p>
               <div id="click" onClick={this.hello}>
-                <p>pornhub@hotmail.fr</p>
+                <p>{`${this.state.mail}`}</p>
                 <div className="icon">
                   <IoIosArrowForward size={30} />
                 </div>
@@ -69,7 +110,7 @@ export default class ProfileSettings extends React.Component {
             <div className="block-cord">
               <p id="titleCord">Téléphone</p>
               <div id="click" onClick={this.hello}>
-                <p>06 05 25 14 58</p>
+                <p> 0{this.state.phone}</p>
                 <div className="icon">
                   <IoIosArrowForward size={30} />
                 </div>

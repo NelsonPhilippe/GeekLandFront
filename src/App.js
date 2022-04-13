@@ -20,6 +20,8 @@ import Historique from "./components/settings/Historique";
 import Paiement from './components/settings/Paiement'
 import Securite from './components/settings/Securite'
 
+import Search from './views/Search'
+
 import Action from './components/categories/GameType/Action'
 import VideoGames from './components/categories/ProductType/VideoGames'
 
@@ -34,6 +36,7 @@ class App extends React.Component {
           <Route path="/profilesetting" element={<ProfileSetting />} />
           <Route path="/FAQ" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
+          
           {/* <Route path="/settings" element={<Settings />} /> */}
 
           <Route path="/register" element={<Register />} />
@@ -54,6 +57,10 @@ class App extends React.Component {
           <Route path="/videogames" element={<VideoGames />} />
           <Route path="/action" element={<Action />} />
           <Route path="/ResetPassword" element={<ResetPassword />} />
+
+          <Route path='/search/:value' element={<Search />} />
+
+
         </Routes>
 
       </div>
