@@ -3,6 +3,8 @@ import '../../css/components/categories/ProductType.css'
 import {Link} from "react-router-dom"
 
 export default class ProductType extends React.Component {
+
+
     render() {
         return (
             <div className='categories'>
@@ -41,4 +43,5 @@ export default class ProductType extends React.Component {
             </div>
         );
     }
+
 }

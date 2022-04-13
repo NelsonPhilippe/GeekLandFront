@@ -28,7 +28,6 @@ class App extends React.Component {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/login" element={<Login />} />
-
           <Route path="/profilesetting" element={<ProfileSetting />} />
           <Route path="/FAQ" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
@@ -48,6 +47,10 @@ class App extends React.Component {
             <Route path="contact" element={<Contact />}></Route>
             <Route path="faq" element={<FAQ />}></Route>
           </Route>
+          <Route path="/categories" element={<Categories />} />
+          <Route path="/videogames" element={<VideoGames />} />
+          <Route path="/action" element={<Action />} />
+          <Route path="/ResetPassword" element={<ResetPassword />} />
         </Routes>
 
       </div>

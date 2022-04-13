@@ -30,6 +30,7 @@
     justify-content:center;
     align-items:center;
     flex-direction: column;
+    text-decoration: none;
     
 }
 
@@ -40,8 +41,6 @@
     color: #ffffff;
     text-align:center;   
     font-size:40px;
-    position:absolute;
-    
 }
 
 .game-type-bg-1{
