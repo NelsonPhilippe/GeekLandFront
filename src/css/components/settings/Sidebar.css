@@ -36,3 +36,7 @@
   cursor: pointer;
   background-position: left;
 }
+
+.sidebar a:focus {
+  background-color: #70bbfa;
+}

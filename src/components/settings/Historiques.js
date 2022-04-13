@@ -6,18 +6,23 @@ export default class Historiques extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      visibilty_detail: false,
+    };
+
     this.drop = this.drop.bind(this);
   }
   drop() {
-    let x = document.getElementById("detail");
-    let y = document.getElementsByName("block-commande");
+    let visibility = this.state.visibilty_detail;
 
-    if (x.style.display === "none") {
-      x.style.display = "block";
-      y.style.borderRadius = "10px 10px 0 0";
-    } else {
-      x.style.display = "none";
+    if (visibility) {
+      return this.setState({
+        visibilty_detail: false,
+      });
     }
+    this.setState({
+      visibilty_detail: true,
+    });
   }
 
   render() {
@@ -36,7 +41,23 @@ export default class Historiques extends React.Component {
             <IoIosArrowDown />
           </div>
         </div>
-        <div id="detail">Salut</div>
+        {/* {this.state.visibilty_detail ? this.}  */}
+        <div id="detail">
+          <div className="article-commande">
+            <div className="article-img">
+              <img
+                src="/img/product/Tanjiro Hinokami.jpg"
+                alt="Nom du produit"
+                title="Titre du produit"
+              />{" "}
+              {/* Mettre l'image du produit*/}
+            </div>
+            <div className="article-title">
+              <h4>Titre du produit</h4> {/* Mettre le titre du produit*/}
+              <button className="btn-avis-article">DONNER MON AVIS</button>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
