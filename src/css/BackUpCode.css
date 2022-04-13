@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&family=Revalia&display=swap');
+
+.backupcode{
+    margin-left: 30%;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.backupcode-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.backup-code{
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start ;
+    font-family: "Marko One", sans-serif;
+    font-size: 20px;
+    color: #f3f3f3
+}
+
+.backupcode-form{
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(46, 134, 193, 45%);
+    border-radius: 40px;
+}
+
+.backupcode-form h1{
+    padding: 0;
+    margin: 0;
+    font-family: "Marko One", sans-serif;
+    color: #f3f3f3;
+}
+
+#backupcode-code{
+    height: 30px;
+    width: 20vw;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+#backupcode-code:focus{
+    outline: none;
+}
+
+.backupcode-form a{  
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    color: #f3f3f3;
+}
+
+.send{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top:30px;
+}
+
+.send button{
+    background-color:#e39D22;
+    border: 1px solid #e39D22;
+    border-radius: 15px;
+    /* width: 50%; */
+    height: 4vh;
+    color: #17202A;
+}

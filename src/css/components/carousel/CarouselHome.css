@@ -19,6 +19,8 @@
 .awssld{
     width: 100vw;
     height: 40vh;
+    margin-top: 7vh;
+    z-index: 3;
 }
 
 .awssld__content img{

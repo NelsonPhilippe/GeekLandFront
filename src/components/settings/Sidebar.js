@@ -8,7 +8,7 @@ export default class SidebarSettings extends React.Component {
       <div>
         <div className="sidebar">
           <div className="sidebar-link">
-            <Link to="/settings">Informations</Link>
+            <Link to="profilesetting">Informations</Link>
             <Link to="paiement">Paiement</Link>
             <Link to="securite">Sécurité</Link>
             <Link to="historique">Historique</Link>
