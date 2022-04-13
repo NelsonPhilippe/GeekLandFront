@@ -20,6 +20,9 @@ import Historique from "./components/settings/Historique";
 import Paiement from './components/settings/Paiement'
 import Securite from './components/settings/Securite'
 
+import Action from './components/categories/GameType/Action'
+import VideoGames from './components/categories/ProductType/VideoGames'
+
 class App extends React.Component {
   render() {
     return (
