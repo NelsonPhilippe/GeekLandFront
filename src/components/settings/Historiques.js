@@ -3,11 +3,18 @@ import "../../css/components/settings/Historiques.css";
 import { IoIosArrowDown } from "react-icons/io";
 
 export default class Historiques extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.drop = this.drop.bind(this);
+  }
   drop() {
     let x = document.getElementById("detail");
+    let y = document.getElementsByName("block-commande");
 
     if (x.style.display === "none") {
       x.style.display = "block";
+      y.style.borderRadius = "10px 10px 0 0";
     } else {
       x.style.display = "none";
     }
@@ -24,10 +31,10 @@ export default class Historiques extends React.Component {
           <p id="price-commande">105.95€</p> {/*Ajouter le prix en back-end*/}
           <p id="livraison">En cours</p>{" "}
           {/*Ajouter le status de la commande en back-end*/}
-          <button className="dropdown" onClick="drop()">
+          <div className="dropdown" onClick={this.drop}>
             <p>Détails</p>
             <IoIosArrowDown />
-          </button>
+          </div>
         </div>
         <div id="detail">Salut</div>
       </div>
