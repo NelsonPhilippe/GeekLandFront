@@ -14,8 +14,8 @@ export default class Fieldlogin extends React.Component {
 		this.handleChange = this.handleChange.bind(this)
 	}
 
-	componentDidMount(){
-		if(localStorage.getItem('user_token') != null){
+	componentDidMount() {
+		if (localStorage.getItem('user_token') != null) {
 			window.location = '/'
 		}
 	}
@@ -30,18 +30,29 @@ export default class Fieldlogin extends React.Component {
 			email: username,
 			password: password
 		}, {
-			headers:{"Content-Type" : "application/json", 
-			"Accept": "*/*"
-		}}).then((res) => {
-			
-			
-			let token = res.data
+			headers: {
+				"Content-Type": "application/json",
+				"Accept": "*/*"
+			}
+		}).then((res) => {
 
-			if(token){
+
+			if(res.data.status !== 'success'){
+				return
+			}
+
+
+			let token = res.data.token
+
+			localStorage.setItem('user_token', token)
+
+
+
+			if (token) {
 				window.location = '/'
 			}
 
-			
+
 		}).catch((err) => {
 			console.error(err)
 		});
@@ -53,13 +64,13 @@ export default class Fieldlogin extends React.Component {
 		let targetName = e.target.name
 		let value = e.target.value
 
-		if(targetName === 'login'){
+		if (targetName === 'login') {
 			this.setState({
 				username: value
 			})
 		}
 
-		if(targetName === 'password'){
+		if (targetName === 'password') {
 			this.setState({
 				password: value
 			})
@@ -81,7 +92,7 @@ export default class Fieldlogin extends React.Component {
 								onChange={this.handleChange}
 							/>
 							<div className="remember">
-								<input type="checkbox" id="check-login" name="login"  />
+								<input type="checkbox" id="check-login" name="login" />
 								<label id="check-login-label">
 									Se souvenir de moi
 								</label>

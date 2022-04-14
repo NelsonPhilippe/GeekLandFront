@@ -28,9 +28,7 @@ class Navbar extends React.Component {
     profile() {
 
         let visibility = this.state.visibility_profile
-        // let element = document.querySelector('.menu-profile')
-
-        
+     
 
         if (visibility) {
             

@@ -59,8 +59,8 @@ export default class Register extends React.Component {
 
             let data = res.data
 
-            if(data.response === 'user exist'){
-                alert('L\'utilisateur est déja existant')
+            if(data.status === 'error'){
+                alert(data.error)
                 window.location = '/'
                 return
             }
