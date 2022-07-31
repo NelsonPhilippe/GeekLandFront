@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Marko+One&family=Revalia&display=swap');
 
 .register{
-    margin-left: 25%;
     padding: 0;
     width: 100vw;
     height: 100vh;
+    background-image: url("../../public/img/LogoGeekLand.png");
+    background-size: cover;
+    
 }
 
 .fieldreg{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     
