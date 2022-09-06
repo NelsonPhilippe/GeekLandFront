@@ -6,7 +6,7 @@ export default class VideoGames extends React.Component {
         return(
             <div className="videogames-container">
                 <div className="title"><h1>Jeux Videos</h1></div>
-                <GameType/>
+                {/* <GameType/> */}
             </div>
         );
     }
